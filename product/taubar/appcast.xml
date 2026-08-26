@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>TauBar Updates</title>
+    <link>https://taubar.app</link>
+    <description>TauBar release feed</description>
+    <language>en</language>
+    <!--
+      Release ごとに更新すること:
+      1. dist/TauBar.zip を GitHub Release に添付
+      2. sign_update で edSignature / length を取得
+      3. enclosure url を Releases の download URL にする
+         例: https://github.com/taubar-app/TauBar/releases/download/v1.0.1/TauBar.zip
+      詳細は docs/RELEASE.md
+    -->
+    <item>
+      <title>Version 1.0</title>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 +0000</pubDate>
+      <enclosure
+        url="https://github.com/taubar-app/TauBar/releases/download/v1.0/TauBar.zip"
+        sparkle:edSignature="REPLACE_WITH_ED_SIGNATURE"
+        length="0"
+        type="application/octet-stream" />
+      <description><![CDATA[
+        <h2>TauBar 1.0</h2>
+        <ul>
+          <li>Initial public release</li>
+          <li>10-day trial, license activation</li>
+        </ul>
+      ]]></description>
+    </item>
+  </channel>
+</rss>

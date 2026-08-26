@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TauSQL — Local SQL for CSV, TSV and Parquet</title>
+  <meta name="description" content="Load local CSV, TSV and Parquet into DuckDB and query them with SQL. No server, no sign-in.">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/product-site.css">
+</head>
+<body class="theme-sql">
+  <a class="skip-link" href="#mainContent" data-i18n="a11y.skip">Skip to content</a>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#top"><img class="brand-mark" src="assets/icon.png" width="34" height="34" alt="">TauSQL</a>
+      <nav class="nav">
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="https://github.com/tau-leap/tausql" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="lang-toggle" id="langToggle" aria-label="Language">EN</button>
+        <a class="btn btn-primary header-download" href="#download" data-i18n="cta.download">Download</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav">
+          <span class="menu-toggle-lines" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="sr-only" data-i18n="nav.menu">Open menu</span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" hidden>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="https://github.com/tau-leap/tausql" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="btn btn-primary" href="#download" data-i18n="cta.download">Download</a>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span><span data-i18n="hero.eyebrow">Local-first SQL, powered by DuckDB</span></p>
+          <h1 data-i18n="hero.title">Import files with the mouse.
+Query them with SQL.</h1>
+          <p class="lead" data-i18n="hero.lead">Load local CSV, TSV and Parquet into a bundled DuckDB engine.
+No server, no sign-in, no data leaving your machine.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="#download" data-i18n="cta.download">Download</a>
+            <a class="text-link" href="#features"><span data-i18n="cta.explore">See what it can do</span> ↓</a>
+          </div>
+          <ul class="hero-notes">
+            <li data-i18n="hero.note1">macOS &amp; Windows</li>
+            <li data-i18n="hero.note2">No account required</li>
+            <li data-i18n="hero.note3">Works offline</li>
+          </ul>
+        </div>
+        <div class="hero-demo" aria-hidden="true">
+          <div class="app-window sql-mock">
+            <div class="window-top">
+              <span class="traffic red"></span><span class="traffic yellow"></span><span class="traffic green"></span>
+              <span class="window-title">TauSQL</span>
+            </div>
+            <div class="sql-tabs"><b class="is-on">SQL</b><b>events</b><b>sensors</b></div>
+            <div class="sql-body">
+              <div class="sql-side"><i></i><i></i><i></i><i></i></div>
+              <div class="sql-query"><em>SELECT</em> date, count(*)<br><em>FROM</em> events<br><em>WHERE</em> status = 'ok'<br><em>GROUP BY</em> 1;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <p class="section-kicker" data-i18n="nav.features">Features</p>
+      <div class="section-head">
+        <h2 data-i18n="feat.title">What you can do</h2>
+        <p data-i18n="feat.sub">Import, query and export — all in one window.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card span-2">
+          <ol class="cap-list">
+            <li><span>01</span><span data-i18n="feat.1">Drop or choose multiple CSV, TSV or Parquet files</span></li>
+            <li><span>02</span><span data-i18n="feat.2">Only matching schemas go into the same table</span></li>
+            <li><span>03</span><span data-i18n="feat.3">Create a new table or append to an existing one</span></li>
+            <li><span>04</span><span data-i18n="feat.4">Run SQL against DuckDB — including multiple statements</span></li>
+            <li><span>05</span><span data-i18n="feat.5">Browse large results with virtual scrolling</span></li>
+            <li><span>06</span><span data-i18n="feat.6">Export query results to CSV, TSV or Parquet</span></li>
+            <li><span>07</span><span data-i18n="feat.7">History for imports and SQL, kept locally</span></li>
+            <li><span>08</span><span data-i18n="feat.8">Optional Quack / DuckLake connections you configure yourself</span></li>
+          </ol>
+        </article>
+        <article class="feature-card span-2">
+          <h3 data-i18n="local.title">Your data stays on your machine.</h3>
+          <p data-i18n="local.body">Tables and history persist in a local DuckDB file. Nothing is sent to TauLeap. Offline, you just pick up where you left off.</p>
+          <div class="data-path">
+            <strong>DATA LOCATION</strong>
+            macOS — ~/Library/Application Support/com.tausql.desktop/main.duckdb<br>
+            Windows — %APPDATA%\com.tausql.desktop\main.duckdb
+          </div>
+        </article>
+      </div>
+      <section class="privacy-band">
+        <div>
+          <p data-i18n="privacy.body">TauSQL has no analytics and no account.
+Remote connections only happen if you configure them.</p>
+        </div>
+        <a class="btn btn-ghost" href="privacy-policy.html" data-i18n="trust.privacy">Privacy policy</a>
+      </section>
+    </section>
+
+    <section class="faq" id="faq">
+      <p class="section-kicker" data-i18n="faq.kicker">FAQ</p>
+      <div class="faq-layout">
+        <div class="section-head">
+          <h2 data-i18n="faq.title">Before you start</h2>
+          <p data-i18n="faq.sub">A few things to know about TauSQL.</p>
+        </div>
+        <div class="faq-list">
+          <details open><summary data-i18n="faq.q1">Does my data leave this computer?</summary><p data-i18n="faq.a1">No. Imports, tables and queries stay in a local DuckDB file. TauLeap never receives them.</p></details>
+          <details><summary data-i18n="faq.q2">Which file types can I import?</summary><p data-i18n="faq.a2">CSV, TSV and Parquet (including .pq). You can mix files into one table when the schema matches.</p></details>
+          <details><summary data-i18n="faq.q3">Is there a cloud account?</summary><p data-i18n="faq.a3">No. There is no sign-in. Optional remote endpoints such as Quack are connections you choose.</p></details>
+          <details><summary data-i18n="faq.q4">Where is the database stored?</summary><p data-i18n="faq.a4">macOS: ~/Library/Application Support/com.tausql.desktop/main.duckdb
+Windows: %APPDATA%\com.tausql.desktop\main.duckdb</p></details>
+          <details><summary data-i18n="faq.q5">Is TauSQL free?</summary><p data-i18n="faq.a5">Yes. Download it from GitHub Releases. See the terms of service for the licence.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="download" id="download">
+      <div class="download-mark"><img src="assets/icon.png" alt=""></div>
+      <h2 data-i18n="download.title">Scattered files,
+one query.</h2>
+      <div class="download-actions">
+        <a class="btn btn-primary btn-lg" href="https://github.com/tau-leap/tausql/releases/latest" data-i18n="download.mac">Download for macOS</a>
+        <a class="btn btn-ghost btn-lg" href="https://github.com/tau-leap/tausql/releases/latest" data-i18n="download.win">Download for Windows</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand" href="#top"><img class="brand-mark" src="assets/icon.png" width="32" height="32" alt="">TauSQL</a>
+      <p data-i18n="footer.tagline">SQL analysis that never leaves your desk.</p>
+      <a class="hub-link" href="../../" data-i18n="footer.hub">All TauLeap products</a>
+    </div>
+    <div class="footer-links">
+      <div>
+        <strong data-i18n="footer.product">Product</strong>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="https://github.com/tau-leap/tausql" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <div>
+        <strong data-i18n="footer.support">Support</strong>
+        <a href="privacy-policy.html" data-i18n="trust.privacy">Privacy policy</a>
+        <a href="terms-of-service.html" data-i18n="trust.terms">Terms of service</a>
+        <a class="js-email" href="#contact-email" data-u="info" data-d="tauleap.com">email</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 TauLeap</span><span>DuckDB is a trademark of DuckDB Foundation.</span></div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script src="../../assets/js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — TauSQL | TauLeap</title>
+<meta name="description" content="Privacy policy for TauSQL, a local-first SQL analysis app by TauLeap. English and Japanese.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="shell">
+    <a class="mark" href="../../"><span class="glyph">&tau;</span> TauLeap</a>
+    <nav>
+      <a href="../../#products">Products</a>
+      <a href="../../#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="legal-head">
+  <div class="shell">
+    <p class="eyebrow">TauSQL</p>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">プライバシーポリシー</p>
+    <ul class="docmeta">
+      <li><strong>Last updated</strong> August 26, 2026</li>
+      <li><strong>Operator</strong> TauLeap</li>
+      <li><strong>Contact</strong> <a class="js-email" href="#contact-email" data-u="info" data-d="tauleap.com">email</a></li>
+    </ul>
+  </div>
+</section>
+
+<main class="legal">
+  <div class="shell">
+
+    <p class="lang-divider">English</p>
+
+    <h2>1. Summary</h2>
+    <p>TauSQL is a local-first desktop application. It imports CSV, TSV and Parquet files into a DuckDB database stored on your computer and lets you query them with SQL. TauLeap does not operate an account system for TauSQL, does not run analytics or telemetry inside the application, and does not receive your data files, your tables or your queries.</p>
+
+    <h2>2. Information we collect</h2>
+    <p>TauLeap collects no personal information through the TauSQL application. There is no sign-up, no login, no usage tracking, no crash reporting service and no advertising identifier. The application does not embed any third-party analytics SDK.</p>
+    <p>If you contact us by email, we receive the information you choose to include in that message — typically your email address and the contents of your enquiry. We use it only to respond to you.</p>
+
+    <h2>3. Data stored on your device</h2>
+    <p>Everything TauSQL works with stays on your computer under your own user account:</p>
+    <ul>
+      <li><strong>Imported data.</strong> The contents of the files you import are written into a DuckDB database file — <code>~/Library/Application Support/com.tausql.desktop/main.duckdb</code> on macOS, and the equivalent path under <code>%APPDATA%\com.tausql.desktop\</code> on Windows.</li>
+      <li><strong>History.</strong> Import history and SQL statement history, so you can review earlier work.</li>
+      <li><strong>Settings and connection metadata.</strong> Application preferences and the details of any connections you configure.</li>
+      <li><strong>Exported files.</strong> Any CSV, TSV or Parquet file you export is written to the location you choose.</li>
+    </ul>
+    <p>This data is never transmitted to TauLeap. Removing the application data directory removes it. Please note that files stored in your home directory may be included in backups you have configured yourself, such as Time Machine, File History or a cloud backup service.</p>
+
+    <h2>4. Network communication</h2>
+    <p>TauSQL is designed to work offline. Network requests occur only in the following cases:</p>
+    <ul>
+      <li><strong>Remote data connections you configure.</strong> If you connect TauSQL to a remote endpoint such as a Quack or DuckLake service, the queries you run and the data involved are sent to and received from that endpoint. That service is operated by whoever you chose to connect to, and their own terms and privacy policy apply. Credentials and access tokens for these connections are stored in your operating system keychain, not in plain text and not on our servers.</li>
+      <li><strong>DuckDB extensions.</strong> TauSQL may load DuckDB extensions. If an extension is not already present locally, DuckDB may download it from the official DuckDB extension repository. This request goes to DuckDB's infrastructure and contains no personal information from your database.</li>
+    </ul>
+    <p>Aside from the above, TauSQL does not send your tables, queries, file names or file contents anywhere.</p>
+
+    <h2>5. Third parties</h2>
+    <p>TauLeap does not sell, rent or share personal information. We use no advertising networks and no data brokers. The only third parties that can receive anything in connection with TauSQL are the remote data services you deliberately connect to, and the DuckDB extension repository described above.</p>
+
+    <h2>6. This website</h2>
+    <p>This page is published on GitHub Pages, operated by GitHub, Inc. GitHub may log standard request information such as IP address for security and operational purposes. Web fonts on this page are served by Google Fonts. We run no analytics, no cookies and no tracking pixels on this site.</p>
+
+    <h2>7. Security</h2>
+    <p>Because your data stays on your own machine, its security depends primarily on the security of that machine. We recommend using full-disk encryption and keeping your operating system up to date. Access tokens you enter for remote connections are handed to your operating system keychain rather than stored by the application in plain text.</p>
+
+    <h2>8. Children</h2>
+    <p>TauSQL is a general-purpose developer and analyst tool and is not directed at children. We do not knowingly collect information from children.</p>
+
+    <h2>9. Your rights</h2>
+    <p>Since we hold no personal data about TauSQL users, there is normally nothing for us to disclose, correct or delete. If you have emailed us and would like that correspondence removed, write to <a class="js-email" href="#contact-email" data-u="info" data-d="tauleap.com">email</a> and we will delete it.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>If we change how TauSQL handles data, we will update this page and revise the "Last updated" date above. Material changes will be reflected here before or at the time they take effect.</p>
+
+    <h2>11. Contact</h2>
+    <p>TauLeap — <a class="js-email" href="#contact-email" data-u="info" data-d="tauleap.com">email</a></p>
+
+
+    <p class="lang-divider">日本語</p>
+
+    <h2>1. 概要</h2>
+    <p>TauSQL は、端末内で完結するデスクトップアプリケーションです。CSV / TSV / Parquet ファイルをお使いのコンピュータ上の DuckDB データベースに取り込み、SQL で分析できます。TauLeap は TauSQL 向けにアカウント機能を提供しておらず、アプリ内で解析・テレメトリを実行することもありません。お客様のデータファイル、テーブル、クエリを受け取ることはありません。</p>
+
+    <h2>2. 収集する情報</h2>
+    <p>TauLeap は、TauSQL アプリケーションを通じて個人情報を一切収集しません。会員登録、ログイン、利用状況の追跡、クラッシュレポート送信、広告識別子のいずれもありません。第三者の解析 SDK も組み込んでいません。</p>
+    <p>メールでお問い合わせいただいた場合は、そのメールに含まれる情報（通常はメールアドレスとお問い合わせ内容）を受け取ります。これは返信のためだけに利用します。</p>
+
+    <h2>3. 端末内に保存されるデータ</h2>
+    <p>TauSQL が扱うデータは、すべてお客様のコンピュータのユーザーアカウント配下に保存されます。</p>
+    <ul>
+      <li><strong>取り込んだデータ</strong> — インポートしたファイルの内容は DuckDB のデータベースファイルに書き込まれます。macOS では <code>~/Library/Application Support/com.tausql.desktop/main.duckdb</code>、Windows では <code>%APPDATA%\com.tausql.desktop\</code> 配下の相当パスです。</li>
+      <li><strong>履歴</strong> — インポート履歴と SQL 実行履歴。過去の作業を確認できます。</li>
+      <li><strong>設定・接続情報</strong> — アプリの設定と、お客様が構成した接続の情報。</li>
+      <li><strong>エクスポートしたファイル</strong> — CSV / TSV / Parquet として出力したファイルは、お客様が指定した場所に保存されます。</li>
+    </ul>
+    <p>これらのデータが TauLeap に送信されることはありません。アプリケーションのデータディレクトリを削除すれば、データも削除されます。なお、ホームディレクトリ配下のファイルは、Time Machine、ファイル履歴、クラウドバックアップなど、お客様ご自身が設定したバックアップの対象に含まれる場合があります。</p>
+
+    <h2>4. ネットワーク通信</h2>
+    <p>TauSQL はオフラインでの動作を前提に設計されています。ネットワーク通信が発生するのは次の場合のみです。</p>
+    <ul>
+      <li><strong>お客様が設定したリモート接続</strong> — Quack や DuckLake などのリモートエンドポイントに接続した場合、実行したクエリと対象データがそのエンドポイントとの間で送受信されます。当該サービスはお客様が接続先として選んだ事業者が運営しており、その事業者の利用規約・プライバシーポリシーが適用されます。接続用の認証情報やアクセストークンは、平文ではなく OS のキーチェーンに保存され、当社のサーバーには保存されません。</li>
+      <li><strong>DuckDB 拡張</strong> — TauSQL は DuckDB の拡張を読み込むことがあります。拡張がローカルに存在しない場合、DuckDB が公式の拡張リポジトリからダウンロードすることがあります。この通信は DuckDB 側のインフラに対して行われ、お客様のデータベース内の個人情報は含まれません。</li>
+    </ul>
+    <p>上記以外に、TauSQL がテーブル・クエリ・ファイル名・ファイル内容を外部へ送信することはありません。</p>
+
+    <h2>5. 第三者提供</h2>
+    <p>TauLeap は個人情報の販売・貸与・共有を行いません。広告ネットワークやデータブローカーも利用していません。TauSQL に関連して情報を受け取り得る第三者は、お客様が意図的に接続したリモートデータサービスと、上記の DuckDB 拡張リポジトリに限られます。</p>
+
+    <h2>6. 本ウェブサイトについて</h2>
+    <p>本ページは GitHub, Inc. が運営する GitHub Pages 上で公開されています。GitHub は、セキュリティおよび運用上の目的で IP アドレスなど標準的なリクエスト情報を記録する場合があります。本ページのウェブフォントは Google Fonts から配信されます。本サイトでは解析ツール、Cookie、トラッキングピクセルのいずれも使用していません。</p>
+
+    <h2>7. セキュリティ</h2>
+    <p>データはお客様の端末内に保持されるため、その安全性は主に端末自体の安全性に依存します。ディスク全体の暗号化と、OS を最新の状態に保つことを推奨します。リモート接続用に入力されたアクセストークンは、アプリ内に平文で保存されるのではなく OS のキーチェーンに委ねられます。</p>
+
+    <h2>8. 子どもの利用について</h2>
+    <p>TauSQL は開発者・アナリスト向けの汎用ツールであり、子どもを対象としたものではありません。当社が子どもから情報を意図的に収集することはありません。</p>
+
+    <h2>9. お客様の権利</h2>
+    <p>当社は TauSQL の利用者に関する個人データを保有していないため、通常、開示・訂正・削除の対象となる情報はありません。メールでご連絡いただいた履歴の削除をご希望の場合は、<a class="js-email" href="#contact-email" data-u="info" data-d="tauleap.com">email</a> までご連絡ください。削除いたします。</p>
+
+    <h2>10. 本ポリシーの変更</h2>
+    <p>TauSQL のデータの取り扱いを変更する場合は、本ページを更新し、上部の「Last updated」を改訂します。重要な変更については、効力発生前または発生時点で本ページに反映します。</p>
+
+    <h2>11. お問い合わせ</h2>
+    <p>TauLeap — <a class="js-email" href="#contact-email" data-u="info" data-d="tauleap.com">email</a></p>
+
+    <p class="note">This document is provided in English and Japanese. If the two versions differ, the Japanese version prevails.<br>本文書は英語と日本語で提供されます。両者に相違がある場合は日本語版が優先します。</p>
+
+    <nav class="doc-nav">
+      <a href="terms-of-service.html">TauSQL Terms of Service</a>
+      <a href="../../">All TauLeap products</a>
+      <a class="js-email" href="#contact-email" data-u="info" data-d="tauleap.com">email</a>
+    </nav>
+
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="shell">
+    <span>&copy; 2026 TauLeap</span>
+    <span>TauSQL &middot; Privacy Policy</span>
+  </div>
+</footer>
+
+<script src="../../assets/js/contact.js"></script>
+</body>
+</html>

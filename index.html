@@ -1,1 +1,170 @@
-test page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TauLeap — Desktop tools that keep your data on your machine</title>
+<meta name="description" content="TauLeap builds small, fast desktop tools for macOS and Windows. Terms of service and privacy policies for TauSQL, TauBar, TauPad and TauDiff.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="shell">
+    <a class="mark" href="/"><span class="glyph">&tau;</span> TauLeap</a>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-plane" aria-hidden="true"><span>&tau;</span></div>
+    <div class="shell">
+      <h1 class="wordmark rise" style="--i:0">Tau<em>Leap</em></h1>
+      <p class="hero-lede rise" style="--i:1">Small, fast desktop tools that keep your files where they already are — on your machine.</p>
+      <p class="hero-lede-ja rise" style="--i:2">データを端末の中に留める、小さく速いデスクトップツール。</p>
+      <div class="hero-actions rise" style="--i:3">
+        <a class="btn btn-primary" href="#products">See the products</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="products">
+    <div class="shell">
+      <div class="band-head rise">
+        <h2>Products</h2>
+        <p>各プロダクトの利用規約とプライバシーポリシー</p>
+      </div>
+
+      <div class="products">
+
+        <article class="product rise">
+          <div>
+            <h3>TauSQL</h3>
+            <span class="platform">macOS &amp; Windows</span>
+          </div>
+          <div>
+            <p>Load local CSV, TSV and Parquet files into a bundled DuckDB engine and query them with SQL. No server, no sign-in.</p>
+            <p>ローカルの CSV / TSV / Parquet を DuckDB に読み込み、SQL で横断的に分析できるデスクトップアプリ。</p>
+          </div>
+          <div class="doc-links">
+            <a href="product/tausql/terms-of-service.html">Terms of Service</a>
+            <a href="product/tausql/privacy-policy.html">Privacy Policy</a>
+          </div>
+        </article>
+
+        <article class="product rise">
+          <div>
+            <h3>TauBar</h3>
+            <span class="platform">macOS</span>
+          </div>
+          <div>
+            <p>A horizontal taskbar for the bottom of your Mac screen, with per-window switching, pinning and system controls.</p>
+            <p>macOS 向けの画面下横型タスクバー。ウィンドウ単位の切り替えとピン留めを素早く行えます。</p>
+          </div>
+          <div class="doc-links">
+            <a href="product/taubar/terms-of-service.html">Terms of Service</a>
+            <a href="product/taubar/privacy-policy.html">Privacy Policy</a>
+          </div>
+        </article>
+
+        <article class="product rise">
+          <div>
+            <h3>TauPad</h3>
+            <span class="platform">macOS <span class="soon">Windows coming soon</span></span>
+          </div>
+          <div>
+            <p>A lightweight text editor built for fast launch, with multi-tab editing, encoding and line-ending control.</p>
+            <p>高速起動と軽さを重視した、シンプルなテキストエディタ。</p>
+          </div>
+          <div class="doc-links">
+            <a href="product/taupad/terms-of-service.html">Terms of Service</a>
+            <a href="product/taupad/privacy-policy.html">Privacy Policy</a>
+          </div>
+        </article>
+
+        <article class="product rise">
+          <div>
+            <h3>TauDiff</h3>
+            <span class="platform">macOS <span class="soon">Windows coming soon</span></span>
+          </div>
+          <div>
+            <p>Compare two text files side by side, edit either pane and save — a focused diff tool with nothing else attached.</p>
+            <p>左右2ペインでテキストの差分を表示し、そのまま編集・保存できる diff ツール。</p>
+          </div>
+          <div class="doc-links">
+            <a href="product/taudiff/terms-of-service.html">Terms of Service</a>
+            <a href="product/taudiff/privacy-policy.html">Privacy Policy</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="band contact" id="contact">
+    <div class="shell rise">
+      <h2>Contact</h2>
+      <p>Questions about a product, a licence, or how we handle your data — one address reaches us for everything.</p>
+      <p>プロダクト・ライセンス・データの取り扱いに関するお問い合わせは、こちらまでご連絡ください。</p>
+      <a class="mail js-email" href="#contact-email" data-u="info" data-d="tauleap.com">email</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="shell">
+    <span>&copy; 2026 TauLeap</span>
+    <span>TauSQL &middot; TauBar &middot; TauPad &middot; TauDiff</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var items = document.querySelectorAll('.rise');
+
+  if (reduce.matches || !('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('is-in'); });
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -12% 0px', threshold: 0.1 });
+
+  items.forEach(function (el) { observer.observe(el); });
+
+  var plane = document.querySelector('.hero-plane span');
+  if (plane) {
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        var shift = Math.min(window.scrollY, 700) * 0.07;
+        plane.style.transform = 'translate(14%, calc(4% + ' + shift + 'px))';
+        ticking = false;
+      });
+    }, { passive: true });
+  }
+})();
+</script>
+
+<script src="assets/js/contact.js"></script>
+</body>
+</html>

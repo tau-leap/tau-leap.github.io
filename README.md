@@ -19,3 +19,4 @@ Each legal document contains an English section followed by a Japanese section o
 | --- | --- |
 | TauMemo | [Chrome Web Store](https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj) |
 | GitHub Translate | [Chrome Web Store](https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm) |
+| Pin Guard | [Chrome Web Store](https://chromewebstore.google.com/detail/pin-guard/hjgldkodbpkdgegobbaafhjkhgeinfac) | 

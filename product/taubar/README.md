@@ -34,17 +34,25 @@ Sparkle の更新フィードは GitHub Releases の latest を使う:
 Buy ボタンは Polar Checkout の直リンクへ遷移します。
 本番デプロイ前に、ページ先頭で URL を設定してください。
 
+既定値は `js/main.js` の Checkout Link（3プラン共通）です。
+プラン別にプリセレクトする場合は Product ID を付けます。
+
+```text
+https://buy.polar.sh/polar_cl_...?product_id=<PRODUCT_UUID>
+```
+
+HTML で上書きする場合は `js/main.js` より前に置きます。
+
 ```html
 <script>
 window.TAUBAR_POLAR_CHECKOUT = {
-  monthly: 'https://buy.polar.sh/...',
-  yearly: 'https://buy.polar.sh/...',
-  lifetime: 'https://buy.polar.sh/...',
+  monthly: 'https://buy.polar.sh/...?product_id=...',
+  yearly: 'https://buy.polar.sh/...?product_id=...',
+  lifetime: 'https://buy.polar.sh/...?product_id=...',
 };
 </script>
 ```
 
-`js/main.js` より前に置くこと。
 未設定のときは購入ボタンで案内アラートを出します。
 
 ## Plans (LP copy)

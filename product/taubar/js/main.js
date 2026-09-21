@@ -1,11 +1,13 @@
 import { applyLanguage, getLang, translate } from './i18n.js';
 
-// Polar Checkout direct links (set before deploy).
+// Polar Checkout Link + product_id preselect per plan.
+const POLAR_CHECKOUT_BASE =
+  'https://buy.polar.sh/polar_cl_SdXGVLofBwFlH2tbTu0PUEWdGBle1di5n91Cj2HY12a';
 // Override in HTML: <script>window.TAUBAR_POLAR_CHECKOUT = { monthly: '...', yearly: '...', lifetime: '...' }</script>
 const POLAR_CHECKOUT = {
-  monthly: '',
-  yearly: '',
-  lifetime: '',
+  monthly: `${POLAR_CHECKOUT_BASE}?product_id=c949b1cb-537f-4629-9fd4-7a5bc9c3cf7f`,
+  yearly: `${POLAR_CHECKOUT_BASE}?product_id=f63fd16d-5137-4464-90e0-ec7724f25b89`,
+  lifetime: `${POLAR_CHECKOUT_BASE}?product_id=22cfd23c-55d7-47d6-9ed8-c3af06c84d22`,
   ...(window.TAUBAR_POLAR_CHECKOUT || {}),
 };
 

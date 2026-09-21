@@ -2,7 +2,7 @@ import { applyLanguage, getLang, translate } from './i18n.js';
 
 // Polar Checkout Link + product_id preselect per plan.
 const POLAR_CHECKOUT_BASE =
-  'https://buy.polar.sh/polar_cl_SdXGVLofBwFlH2tbTu0PUEWdGBle1di5n91Cj2HY12a';
+  'https://buy.polar.sh/polar_cl_0gbd8GpjTsYNxIKZoJsLNxlvLBru0diFDFXGz1Ht8l0';
 // Override in HTML: <script>window.TAUBAR_POLAR_CHECKOUT = { monthly: '...', yearly: '...', lifetime: '...' }</script>
 const POLAR_CHECKOUT = {
   monthly: `${POLAR_CHECKOUT_BASE}?product_id=c949b1cb-537f-4629-9fd4-7a5bc9c3cf7f`,

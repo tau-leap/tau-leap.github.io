@@ -490,6 +490,58 @@ main > section.intro { padding-top: 2rem; padding-bottom: 1.5rem; }
 .privacy-band p { max-width: 43rem; font-size: 0.9rem; }
 
 .pricing { margin-top: 5rem !important; }
+.plan-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0 0 2.25rem;
+}
+.compare-col {
+  padding: 1.6rem 1.45rem 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+}
+.compare-col.compare-pro {
+  border-color: rgba(54, 118, 182, 0.35);
+  background: linear-gradient(180deg, #f4f9fd, #fff 55%);
+}
+.compare-label {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.compare-note {
+  margin: 0.45rem 0 1rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+.compare-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+}
+.compare-list li {
+  position: relative;
+  padding-left: 1.15rem;
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.compare-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--blue);
+  font-size: 0.78rem;
+}
 .pricing-cards { display: grid; grid-template-columns: repeat(3, 1fr); align-items: stretch; gap: 1rem; }
 .price-card { position: relative; padding: 2.2rem 1.5rem 1.6rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; text-align: center; box-shadow: 0 12px 35px rgba(54,118,182,0.06); }
 .price-card.featured { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-9px); }
@@ -573,7 +625,7 @@ main > .download { width: min(1120px, calc(100% - 3rem)); margin-bottom: 7rem; p
   main > section.faq { padding-top: 2.5rem; padding-bottom: 2.5rem; }
   .product-shot { padding: 2.25rem 1rem 2.5rem; }
   .product-shot-frame { padding: 0.9rem 0.75rem; border-radius: 16px; }
-  .feature-grid, .feature-card.feature-main, .faq-layout, .pricing-cards { grid-template-columns: 1fr; }
+  .feature-grid, .feature-card.feature-main, .faq-layout, .pricing-cards, .plan-compare { grid-template-columns: 1fr; }
   .feature-card:last-child { grid-column: auto; }
   .feature-card.feature-main { gap: 2rem; }
   .privacy-band { grid-template-columns: 1fr; padding: 1.25rem 1.35rem; }

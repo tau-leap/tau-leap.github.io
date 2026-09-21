@@ -1,6 +1,13 @@
 import { applyLanguage, getLang, translate } from './i18n.js';
 
-const API_BASE = window.TAUBAR_API_URL || 'https://api.taubar.app';
+// Polar Checkout direct links (set before deploy).
+// Override in HTML: <script>window.TAUBAR_POLAR_CHECKOUT = { monthly: '...', yearly: '...', lifetime: '...' }</script>
+const POLAR_CHECKOUT = {
+  monthly: '',
+  yearly: '',
+  lifetime: '',
+  ...(window.TAUBAR_POLAR_CHECKOUT || {}),
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   applyLanguage(getLang());
@@ -40,35 +47,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.querySelectorAll('.buy-btn').forEach((button) => {
-    button.addEventListener('click', async () => {
+    button.addEventListener('click', () => {
       const plan = button.dataset.plan;
-      button.disabled = true;
-      button.setAttribute('aria-busy', 'true');
-      const original = button.textContent;
-      button.textContent = '…';
-
-      try {
-        const email = window.prompt(
-          getLang() === 'ja'
-            ? 'ライセンス送付先のメールアドレス（任意）'
-            : 'Email for your license key (optional)'
-        );
-
-        const res = await fetch(`${API_BASE}/api/checkout/session`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ plan, email: email || undefined }),
-        });
-
-        const data = await res.json();
-        if (!res.ok) throw new Error(data.message || 'Checkout failed');
-        window.location.href = data.url;
-      } catch (err) {
-        alert(err.message);
-        button.disabled = false;
-        button.removeAttribute('aria-busy');
-        button.textContent = original;
+      const url = POLAR_CHECKOUT[plan];
+      if (url) {
+        window.location.href = url;
+        return;
       }
+      alert(translate('pricing.checkoutMissing'));
     });
   });
 });

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Namecard — TauLeap</title>
+<meta name="description" content="TauLeap 代表 鈴木孝康の名刺。">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  /* Namecard preview + print (91mm × 55mm) */
+
+  .nc-page {
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - 8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+
+  .nc-meta {
+    text-align: center;
+  }
+
+  .nc-meta h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(1.4rem, 3vw, 1.85rem);
+    letter-spacing: -0.03em;
+    margin: 0 0 0.45rem;
+  }
+
+  .nc-meta p {
+    margin: 0;
+    color: var(--ink-3);
+    font-size: 0.95rem;
+  }
+
+  .nc-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .namecard {
+    --nc-w: 91mm;
+    --nc-h: 55mm;
+    position: relative;
+    width: min(100%, 28rem);
+    aspect-ratio: 91 / 55;
+    max-width: var(--nc-w);
+    background:
+      radial-gradient(120% 90% at 100% -20%, #dfeef0 0%, rgba(223, 238, 240, 0) 55%),
+      radial-gradient(90% 80% at -8% 110%, #e9f2e9 0%, rgba(233, 242, 233, 0) 50%),
+      linear-gradient(165deg, #f8fbfb 0%, #eef4f5 100%);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.7) inset,
+      0 18px 48px rgba(16, 28, 38, 0.1);
+    color: var(--ink);
+  }
+
+  .namecard-plane {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .namecard-plane span {
+    position: absolute;
+    right: -6%;
+    top: 8%;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(7rem, 42vw, 11rem);
+    line-height: 0.72;
+    color: var(--accent);
+    opacity: 0.12;
+  }
+
+  .namecard-inner {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: clamp(0.85rem, 3.2vw, 1.15rem) clamp(1rem, 3.6vw, 1.35rem);
+  }
+
+  .nc-brand {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(0.95rem, 2.8vw, 1.05rem);
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .nc-brand .glyph {
+    font-size: 1.25em;
+    line-height: 1;
+    color: var(--accent);
+  }
+
+  .nc-identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 0.15rem 0;
+  }
+
+  .nc-role {
+    margin: 0;
+    font-family: var(--display);
+    font-size: clamp(0.68rem, 2vw, 0.75rem);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .nc-name {
+    margin: 0;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(1.35rem, 4.2vw, 1.7rem);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
+
+  .nc-contact {
+    display: grid;
+    gap: 0.35rem;
+    font-size: clamp(0.62rem, 1.85vw, 0.72rem);
+    line-height: 1.55;
+    color: var(--ink-2);
+  }
+
+  .nc-contact a {
+    color: var(--accent-deep);
+    text-decoration: none;
+    font-family: var(--display);
+    letter-spacing: -0.01em;
+  }
+
+  .nc-contact a:hover {
+    color: var(--accent);
+  }
+
+  .nc-address {
+    margin: 0;
+  }
+
+  @media (max-width: 420px) {
+    .namecard {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  @media print {
+    @page {
+      size: 91mm 55mm;
+      margin: 0;
+    }
+
+    body {
+      background: #fff !important;
+      background-image: none !important;
+    }
+
+    body::before,
+    .masthead,
+    .nc-meta,
+    .site-foot {
+      display: none !important;
+    }
+
+    .nc-page {
+      min-height: 0;
+      padding: 0;
+      gap: 0;
+    }
+
+    .namecard {
+      width: 91mm;
+      height: 55mm;
+      max-width: none;
+      aspect-ratio: auto;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .namecard-plane span {
+      font-size: 9.5rem;
+      opacity: 0.11;
+    }
+
+    .namecard-inner {
+      padding: 5.5mm 6.5mm;
+    }
+
+    .nc-brand {
+      font-size: 10pt;
+    }
+
+    .nc-role {
+      font-size: 7pt;
+    }
+
+    .nc-name {
+      font-size: 16pt;
+    }
+
+    .nc-contact {
+      font-size: 7pt;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="shell">
+    <a class="mark" href="/"><span class="glyph">&tau;</span> TauLeap</a>
+    <nav>
+      <a href="/#products">Products</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="nc-page">
+  <div class="nc-meta rise" style="--i:0">
+    <h1>Namecard</h1>
+    <p>91mm × 55mm · 印刷用</p>
+  </div>
+
+  <article class="namecard rise" style="--i:1" aria-label="名刺">
+    <div class="namecard-plane" aria-hidden="true"><span>&tau;</span></div>
+    <div class="namecard-inner">
+      <a class="nc-brand" href="/"><span class="glyph">&tau;</span> TauLeap</a>
+
+      <div class="nc-identity">
+        <p class="nc-role">代表</p>
+        <h2 class="nc-name">鈴木 孝康</h2>
+      </div>
+
+      <div class="nc-contact">
+        <p class="nc-address">
+          〒160-0023<br>
+          東京都新宿区西新宿3丁目3番13号<br>
+          西新宿水間ビル2F
+        </p>
+        <a href="mailto:takayasu.suzuki@tauleap.com">takayasu.suzuki@tauleap.com</a>
+      </div>
+    </div>
+  </article>
+
+  <div class="nc-actions rise" style="--i:2">
+    <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+    <a class="btn btn-ghost" href="/">Back to home</a>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="shell">
+    <span>&copy; 2026 TauLeap</span>
+    <span>Namecard</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var items = document.querySelectorAll('.rise');
+
+  if (reduce.matches || !('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('is-in'); });
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
+
+  items.forEach(function (el) { observer.observe(el); });
+})();
+</script>
+</body>
+</html>

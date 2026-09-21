@@ -1,0 +1,30 @@
+{
+  "folders": [
+    {
+      "name": "tau-leap.github.io",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "window.title": "tau-leap.github.io — ${activeEditorShort}",
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "cSpell.useGitignore": true,
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#111827",
+      "titleBar.activeForeground": "#ffffff",
+      "titleBar.inactiveBackground": "#030712",
+      "titleBar.inactiveForeground": "#9ca3af",
+      "activityBar.background": "#111827",
+      "activityBar.foreground": "#ffffff",
+      "activityBarBadge.background": "#60A5FA",
+      "activityBarBadge.foreground": "#030712",
+      "statusBar.background": "#030712",
+      "statusBar.foreground": "#ffffff"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "streetsidesoftware.code-spell-checker"
+    ]
+  }
+}

@@ -1,7 +1,8 @@
 # TauBar Website
 
 Static landing page for TauBar.
-Hosted under [tau-leap.github.io/product/taubar](https://tau-leap.github.io/product/taubar/).
+本番 URL: [www.tauleap.com/product/taubar](https://www.tauleap.com/product/taubar/)
+（ソースは [tau-leap.github.io/product/taubar](https://tau-leap.github.io/product/taubar/)）
 
 ## Local preview
 
@@ -21,18 +22,33 @@ Push changes to that repository to publish.
 Place release artifacts at:
 
 - `/product/taubar/downloads/TauBar.dmg`（LP 用の手動ダウンロード）
-- `/product/taubar/appcast.xml`（Sparkle フィード。enclosure は GitHub Releases の ZIP）
 
-Sparkle の `SUFeedURL` が `https://taubar.app/appcast.xml` の場合は、
-カスタムドメインまたはリダイレクトでこのファイルへ届けること。
+Sparkle の更新フィードは GitHub Releases の latest を使う:
 
-## Checkout API
+`https://github.com/tau-leap/taubar/releases/latest/download/appcast.xml`
 
-Buy buttons call `https://api.taubar.app/api/checkout/session`.
-Override for staging:
+（このディレクトリの `appcast.xml` はレガシー。本番アプリは Releases 側を参照）
+
+## Polar Checkout
+
+Buy ボタンは Polar Checkout の直リンクへ遷移します。
+本番デプロイ前に、ページ先頭で URL を設定してください。
 
 ```html
-<script>window.TAUBAR_API_URL = 'http://localhost:8787';</script>
+<script>
+window.TAUBAR_POLAR_CHECKOUT = {
+  monthly: 'https://buy.polar.sh/...',
+  yearly: 'https://buy.polar.sh/...',
+  lifetime: 'https://buy.polar.sh/...',
+};
+</script>
 ```
 
-before `js/main.js`.
+`js/main.js` より前に置くこと。
+未設定のときは購入ボタンで案内アラートを出します。
+
+## Plans (LP copy)
+
+- Trial: 10 days, all features
+- Free (after trial): core taskbar only
+- Monthly / Yearly / Lifetime: same Pro entitlements, up to 2 Macs

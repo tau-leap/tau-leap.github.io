@@ -56,10 +56,10 @@
 
     <h2>3. Information transmitted from TauBar</h2>
     <ul>
-      <li><strong>Purchase.</strong> Payments are processed by Stripe, Inc. You provide your email address and payment details directly to Stripe. We receive your email address and the record of the purchase, so that we can issue and support your licence. We never see or store full payment card numbers. Stripe's handling of your data is governed by Stripe's own privacy policy.</li>
-      <li><strong>Licence activation and validation.</strong> When you activate or validate a licence, TauBar sends your licence key and a device identifier to our licence server at <code>api.taubar.app</code>. The device identifier is a random value generated on first use and stored in your macOS Keychain; it is not derived from your hardware serial number and does not identify you personally. This is used solely to enforce the per-licence device limit.</li>
-      <li><strong>Update checks.</strong> TauBar checks for new versions using Sparkle, which requests <code>taubar.app/appcast.xml</code> and downloads updates from GitHub Releases. As with any network request, the servers involved may log your IP address and application version.</li>
-      <li><strong>Feedback board.</strong> Feature requests and votes are hosted on a third-party feedback service (Canny) at <code>feedback.taubar.app</code>. Anything you post there, including any name or email you supply, is handled under that provider's privacy policy.</li>
+      <li><strong>Purchase.</strong> Payments are processed by Polar.sh (Merchant of Record). You provide your email address and payment details directly to Polar. We receive your email address and the record of the purchase, so that we can issue and support your licence. We never see or store full payment card numbers. Polar's handling of your data is governed by Polar's own privacy policy.</li>
+      <li><strong>Licence activation and validation.</strong> When you activate or validate a licence, TauBar sends your licence key and a device identifier to Polar's Customer Portal API. The device identifier is a random value generated on first use and stored in your macOS Keychain; it is not derived from your hardware serial number and does not identify you personally. This is used solely to enforce the per-licence device limit.</li>
+      <li><strong>Update checks.</strong> TauBar checks for new versions using Sparkle, which requests the appcast at <code>https://github.com/tau-leap/taubar/releases/latest/download/appcast.xml</code> and downloads updates from GitHub Releases. As with any network request, the servers involved may log your IP address and application version.</li>
+      <li><strong>Feedback board.</strong> Feature requests are hosted on a third-party board at <code>feedback.taubar.app</code>. Anything you post there, including any name or email you supply, is handled under that provider's privacy policy. TauBar opens the board as a link only; it does not sync account data via API.</li>
     </ul>
     <p>TauBar contains no analytics SDK, no crash reporting service, no advertising identifier and no usage tracking.</p>
 
@@ -71,14 +71,14 @@
     <p>Purchase records and licence records are retained for as long as your licence is active and afterwards as required for accounting, tax and legal purposes. Support emails are retained for as long as needed to handle the enquiry and any follow-up.</p>
 
     <h2>6. Third parties</h2>
-    <p>We do not sell or share personal information as those terms are defined under the CCPA/CPRA, and we do not rent it. We do not use personal information for cross-context behavioural advertising. The processors involved in TauBar are Stripe (payments), our licence server infrastructure, GitHub (update hosting), and Canny (feedback board). Each acts under its own privacy policy for the data it receives.</p>
+    <p>We do not sell or share personal information as those terms are defined under the CCPA/CPRA, and we do not rent it. We do not use personal information for cross-context behavioural advertising. The processors involved in TauBar are Polar (payments and licence activation), GitHub (update hosting), and the feedback board host. Each acts under its own privacy policy for the data it receives.</p>
     <p>Some of these processors, and Google Fonts as described in section 7, are established outside Japan and the EEA — typically in the United States — and may process data there. That processing is part of using those services, under the safeguards those providers themselves offer.</p>
 
     <h2>7. This website</h2>
     <p>This page is published on GitHub Pages, operated by GitHub, Inc. GitHub may log standard request information such as IP address for security and operational purposes. Web fonts on this page are served by Google Fonts. We run no analytics, no cookies and no tracking pixels on this site.</p>
 
     <h2>8. Security</h2>
-    <p>Licence keys and the device identifier are stored in the macOS Keychain. Communication with our licence server and with Stripe uses encrypted HTTPS connections. Window titles, calendar contents and window previews never leave your Mac.</p>
+    <p>Licence keys and the device identifier are stored in the macOS Keychain. Communication with Polar uses encrypted HTTPS connections. Window titles, calendar contents and window previews never leave your Mac.</p>
 
     <h2>9. Children</h2>
     <p>TauBar is a general-purpose productivity tool and is not directed at children. We do not knowingly collect information from children.</p>
@@ -111,10 +111,10 @@
 
     <h2>3. TauBar から送信される情報</h2>
     <ul>
-      <li><strong>購入</strong> — 決済は Stripe, Inc. が処理します。メールアドレスと支払い情報は Stripe に直接提供されます。当社は、ライセンスの発行およびサポートのため、メールアドレスと購入記録を受領します。クレジットカード番号の全桁を当社が閲覧・保存することはありません。Stripe におけるデータの取り扱いは Stripe のプライバシーポリシーに従います。</li>
-      <li><strong>ライセンスの有効化・検証</strong> — ライセンスの有効化または検証の際、TauBar はライセンスキーとデバイス識別子を当社のライセンスサーバー（<code>api.taubar.app</code>）へ送信します。デバイス識別子は初回利用時に生成されるランダムな値で、macOS のキーチェーンに保存されます。ハードウェアのシリアル番号から導出されるものではなく、お客様個人を特定するものでもありません。これはライセンスあたりの利用台数制限のためだけに使用されます。</li>
-      <li><strong>アップデート確認</strong> — TauBar は Sparkle を用いて新バージョンを確認し、<code>taubar.app/appcast.xml</code> へリクエストを行い、GitHub Releases から更新を取得します。一般的なネットワーク通信と同様に、関係するサーバーが IP アドレスやアプリのバージョンを記録する場合があります。</li>
-      <li><strong>フィードバックボード</strong> — 機能要望と投票は、第三者のフィードバックサービス（Canny）上の <code>feedback.taubar.app</code> でホストされています。そこへ投稿した内容（お客様が入力した氏名・メールアドレスを含む）は、当該提供事業者のプライバシーポリシーに従って取り扱われます。</li>
+      <li><strong>購入</strong> — 決済は Polar.sh（Merchant of Record）が処理します。メールアドレスと支払い情報は Polar に直接提供されます。当社は、ライセンスの発行およびサポートのため、メールアドレスと購入記録を受領します。クレジットカード番号の全桁を当社が閲覧・保存することはありません。Polar におけるデータの取り扱いは Polar のプライバシーポリシーに従います。</li>
+      <li><strong>ライセンスの有効化・検証</strong> — ライセンスの有効化または検証の際、TauBar はライセンスキーとデバイス識別子を Polar Customer Portal API へ送信します。デバイス識別子は初回利用時に生成されるランダムな値で、macOS のキーチェーンに保存されます。ハードウェアのシリアル番号から導出されるものではなく、お客様個人を特定するものでもありません。これはライセンスあたりの利用台数制限のためだけに使用されます。</li>
+      <li><strong>アップデート確認</strong> — TauBar は Sparkle を用いて新バージョンを確認し、<code>https://github.com/tau-leap/taubar/releases/latest/download/appcast.xml</code> へリクエストを行い、GitHub Releases から更新を取得します。一般的なネットワーク通信と同様に、関係するサーバーが IP アドレスやアプリのバージョンを記録する場合があります。</li>
+      <li><strong>フィードバックボード</strong> — 機能要望は第三者ボード上の <code>feedback.taubar.app</code> でホストされています。そこへ投稿した内容（お客様が入力した氏名・メールアドレスを含む）は、当該提供事業者のプライバシーポリシーに従って取り扱われます。TauBar はリンクを開くのみで、API によるアカウント連携は行いません。</li>
     </ul>
     <p>TauBar には解析 SDK、クラッシュレポートサービス、広告識別子、利用状況の追跡のいずれも含まれていません。</p>
 
@@ -126,14 +126,14 @@
     <p>購入記録およびライセンス記録は、ライセンスが有効な期間、ならびにその後も会計・税務・法令上必要とされる期間、保管します。サポートに関するメールは、当該問い合わせおよびその後のやり取りに必要な期間、保管します。</p>
 
     <h2>6. 第三者提供</h2>
-    <p>当社は、CCPA/CPRA にいう個人情報の販売・共有を行わず、貸与もしません。クロスコンテキストの行動広告にも使いません。TauBar に関与する処理者は、Stripe（決済）、当社のライセンスサーバー基盤、GitHub（アップデート配信）、Canny（フィードバックボード）です。各社は受領したデータについて、自社のプライバシーポリシーに従って行動します。</p>
+    <p>当社は、CCPA/CPRA にいう個人情報の販売・共有を行わず、貸与もしません。クロスコンテキストの行動広告にも使いません。TauBar に関与する処理者は、Polar（決済・ライセンス有効化）、GitHub（アップデート配信）、フィードバックボードのホストです。各社は受領したデータについて、自社のプライバシーポリシーに従って行動します。</p>
     <p>これらの処理者の一部、および第 7 条に記載の Google Fonts は、日本および EEA の域外（主に米国）に所在し、そこでデータを取り扱うことがあります。当該取扱いは各サービスの利用に伴うものであり、各提供事業者が自ら定める保護措置に依拠します。</p>
 
     <h2>7. 本ウェブサイトについて</h2>
     <p>本ページは GitHub, Inc. が運営する GitHub Pages 上で公開されています。GitHub は、セキュリティおよび運用上の目的で IP アドレスなど標準的なリクエスト情報を記録する場合があります。本ページのウェブフォントは Google Fonts から配信されます。本サイトでは解析ツール、Cookie、トラッキングピクセルのいずれも使用していません。</p>
 
     <h2>8. セキュリティ</h2>
-    <p>ライセンスキーとデバイス識別子は macOS のキーチェーンに保存されます。当社ライセンスサーバーおよび Stripe との通信は、暗号化された HTTPS 接続を使用します。ウィンドウタイトル、カレンダーの内容、ウィンドウプレビューが Mac の外に出ることはありません。</p>
+    <p>ライセンスキーとデバイス識別子は macOS のキーチェーンに保存されます。Polar との通信は、暗号化された HTTPS 接続を使用します。ウィンドウタイトル、カレンダーの内容、ウィンドウプレビューが Mac の外に出ることはありません。</p>
 
     <h2>9. 子どもの利用について</h2>
     <p>TauBar は汎用の生産性ツールであり、子どもを対象としたものではありません。当社が子どもから情報を意図的に収集することはありません。</p>

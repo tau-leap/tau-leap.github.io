@@ -1,7 +1,7 @@
 # TauBar Website
 
 Static landing page for TauBar.
-本番 URL: [www.tauleap.com/product/taubar](https://www.tauleap.com/product/taubar/)
+本番 URL: [tauleap.com/product/taubar](https://tauleap.com/product/taubar/)
 （ソースは [tau-leap.github.io/product/taubar](https://tau-leap.github.io/product/taubar/)）
 
 ## Local preview

@@ -185,16 +185,20 @@ a:hover {
 
 .hero-lede {
   max-width: 34ch;
-  margin: 1.6rem 0 0;
-  font-size: clamp(1.1rem, 2.1vw, 1.4rem);
-  line-height: 1.6;
-  color: var(--ink-2);
+  margin: 0;
+  font-family: var(--body);
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  color: var(--ink);
 }
 
 .hero-lede-ja {
   max-width: 40ch;
-  margin: 0.5rem 0 0;
+  margin: 0.65rem 0 0;
   font-size: 1rem;
+  font-weight: 400;
   color: var(--ink-3);
 }
 
@@ -291,7 +295,7 @@ a:hover {
 
 .product {
   display: grid;
-  grid-template-columns: minmax(0, 15rem) minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 17.5rem) minmax(0, 1fr) auto;
   gap: 1rem 2.5rem;
   align-items: start;
   padding: 2.2rem 0;
@@ -300,6 +304,23 @@ a:hover {
 
 .product:last-child {
   border-bottom: none;
+}
+
+.product-meta {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.product-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: cover;
+  background: var(--card);
+  border: 1px solid var(--line-soft);
 }
 
 .product h3 {
@@ -317,9 +338,24 @@ a:hover {
   gap: 0.5rem;
   margin-top: 0.4rem;
   font-size: 0.82rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
   color: var(--ink-3);
+}
+
+.product .apple-mark {
+  width: 0.78em;
+  height: 0.95em;
+  flex-shrink: 0;
+  fill: currentColor;
+  opacity: 0.88;
+  margin-right: -0.15rem;
+}
+
+.product .chrome-mark {
+  width: 0.95em;
+  height: 0.95em;
+  flex-shrink: 0;
+  margin-right: -0.1rem;
 }
 
 .product .soon {

@@ -494,9 +494,101 @@ a:hover {
 .site-foot .shell {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem 1.5rem;
+  gap: 1rem 1.5rem;
   justify-content: space-between;
   align-items: center;
+}
+
+.foot-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  align-items: center;
+}
+
+.support-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink-2);
+  font-family: var(--display);
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: transform 0.25s ease, border-color 0.25s ease, color 0.25s ease, background-color 0.25s ease;
+}
+
+.support-link:hover {
+  color: var(--accent-deep);
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+}
+
+.support-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+/* ---------- Thanks ---------- */
+
+.thanks-page main {
+  min-height: calc(100vh - 8rem);
+  display: grid;
+  place-items: center;
+  padding: 3rem 0 4rem;
+}
+
+.thanks {
+  text-align: center;
+  max-width: 36rem;
+}
+
+.thanks-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto 1.4rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.thanks-mark svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.thanks h1 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.thanks p {
+  margin: 0.9rem 0 0;
+  color: var(--ink-2);
+}
+
+.thanks .thanks-ja {
+  color: var(--ink-3);
+  font-size: 0.98rem;
+}
+
+.thanks .hero-actions {
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 /* ---------- Legal documents ---------- */
@@ -664,6 +756,7 @@ a:hover {
   }
 
   .btn:hover,
+  .support-link:hover,
   .doc-links a:hover::after {
     transform: none;
   }

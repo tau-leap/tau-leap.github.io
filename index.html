@@ -1,257 +1,203 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TauLeap — Local-first desktop apps and Chrome extensions</title>
-<meta name="description" content="TauLeap builds small desktop tools and Chrome extensions for developers and data engineers — TauBar, TauSQL, TauPad, TauDiff, TauMemo, GitHub Translate and Pin Guard.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>TauLeap · Mac apps and Chrome extensions</title>
+<meta content="TauLeap makes small Mac apps and Chrome extensions that run on your machine. TauBar, TauPad, TauDiff, GitHub Translate, Pin Guard, TauMemo." name="description"/>
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/favicon.png" type="image/png" sizes="192x192">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+<link href="assets/css/home.css" rel="stylesheet"/>
 </head>
-<body>
-
-<header class="masthead">
-  <div class="shell">
-    <a class="mark" href="/"><span class="glyph">&tau;</span> TauLeap</a>
-    <nav>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
+<body class="home">
+<header class="site-header">
+<div class="shell">
+<a class="mark" href="/"><span class="glyph">τ</span>TauLeap</a>
+<nav aria-label="Main">
+<a class="is-active" href="#apps">Apps</a>
+<a href="about/">About</a>
+<a href="#contact">Contact</a>
+<span aria-hidden="true" class="header-sep"></span>
+<a href="https://github.com/tau-leap" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a class="nav-support" href="https://buy.polar.sh/polar_cl_QaRp7E5ZmUJIgkGfaY303D8nl0AAl69xjlJYS14sHu1" target="_blank" rel="noopener noreferrer" aria-label="Support TauLeap work">
+<svg class="nav-support-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path fill="currentColor" d="M4.5 5.25A.75.75 0 0 1 5.25 4.5h11.5a.75.75 0 0 1 .75.75V7h1.25A2.75 2.75 0 0 1 21.5 9.75v.5A3.75 3.75 0 0 1 17.75 14H17.5v1.1A4.4 4.4 0 0 1 13.1 19.5H8.9A4.4 4.4 0 0 1 4.5 15.1V5.25Zm13 6.5h.25a2.25 2.25 0 0 0 2.25-2.25v-.5a1.25 1.25 0 0 0-1.25-1.25H17.5v4Zm-11.5-5.5v8.85A2.9 2.9 0 0 0 8.9 18h4.2A2.9 2.9 0 0 0 16 15.1V6.25H6Z"/>
+</svg>
+<span class="nav-support-label">Support</span>
+</a>
+</nav>
+</div>
 </header>
-
 <main>
+<section class="hero">
+<div aria-hidden="true" class="hero-glow"></div>
+<div class="shell">
+<h1 class="hero-name">TauLeap</h1>
+<p class="hero-tag">Mac apps and Chrome extensions</p>
+<p class="hero-tag-ja">軽量で安全なツールをつくっています</p>
+<div class="hero-actions">
+</div>
+</div>
+</section>
+<section class="band" id="apps">
+<div class="shell">
 
-  <section class="hero">
-    <div class="hero-plane" aria-hidden="true"><span>&tau;</span></div>
-    <div class="shell">
-      <h1 class="hero-lede rise" style="--i:0">Small, fast tools for developers and data engineers.</h1>
-      <p class="hero-lede-ja rise" style="--i:1">私たちは開発者とデータエンジニアのために、小さく速いツールを作ります。</p>
-      <div class="hero-actions rise" style="--i:2">
-        <a class="btn btn-primary" href="#products">See the products</a>
-        <a class="btn btn-ghost" href="#contact">Get in touch</a>
-      </div>
-    </div>
-  </section>
+<div class="platform-group" id="mac-apps">
+<div class="platform-heading">
+<svg class="platform-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="4" width="18" height="12" rx="1.5"/>
+  <path d="M8 20h8"/>
+  <path d="M12 16v4"/>
+</svg>
+<div class="platform-heading-text">
+<h2>Mac apps</h2>
+<p class="platform-heading-ja">Mac アプリ</p>
+</div>
+</div>
+<div class="app-grid">
+<a class="app-card" href="product/taubar/" target="_blank" rel="noopener noreferrer">
+<img alt="" class="app-icon" height="56" src="product/taubar/assets/icon.png" width="56"/>
+<div class="app-card-body">
+<h3 class="app-card-title">TauBar</h3>
+<p class="app-card-desc">Gives your Mac a Windows-style taskbar. Work with each window on its own, with Chrome profile icons shown.</p>
+<p class="app-card-desc-ja">Mac を Windows 風のタスクバーで操作可能にします。ウィンドウ単位で操作できます。Chrome のプロファイルアイコンも表示します。</p>
+<div class="app-card-meta">
+<span class="badge">macOS 26+ · Apple Silicon</span>
+</div>
+</div>
+</a>
+<a class="app-card" href="product/taupad/" target="_blank" rel="noopener noreferrer">
+<img alt="" class="app-icon" height="56" src="product/taupad/assets/icon.png" width="56"/>
+<div class="app-card-body">
+<h3 class="app-card-title">TauPad</h3>
+<p class="app-card-desc">Opens text files quickly in a light editor with tabs, encoding, and line endings.</p>
+<p class="app-card-desc-ja">テキストファイルをすばやく開き、タブや文字コード、改行コードを扱えます。</p>
+<div class="app-card-meta">
+<span class="badge">macOS 10.15+ · Apple Silicon</span>
+<span class="badge">Free</span>
+</div>
+</div>
+</a>
+<a class="app-card" href="product/taudiff/" target="_blank" rel="noopener noreferrer">
+<img alt="" class="app-icon" height="56" src="product/taudiff/assets/icon.png" width="56"/>
+<div class="app-card-body">
+<h3 class="app-card-title">TauDiff</h3>
+<p class="app-card-desc">Compares two text files side by side so you can edit either pane and save.</p>
+<p class="app-card-desc-ja">テキストファイルを左右で比較し、そのまま編集・保存できます。</p>
+<div class="app-card-meta">
+<span class="badge">macOS 10.15+ · Apple Silicon</span>
+<span class="badge">Free</span>
+</div>
+</div>
+</a>
+</div>
+</div>
 
-  <section class="band" id="products">
-    <div class="shell">
-      <div class="band-head rise">
-        <h2>Products</h2>
-        <p>デスクトップアプリと Chrome 拡張</p>
-      </div>
+<div class="platform-group" id="chrome-extensions">
+<div class="platform-heading">
+<svg class="platform-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="4" width="18" height="16" rx="2"/>
+  <path d="M3 8h18"/>
+  <circle cx="6.5" cy="6" r="0.6" fill="currentColor" stroke="none"/>
+  <circle cx="9" cy="6" r="0.6" fill="currentColor" stroke="none"/>
+  <path d="M10 13.5h2.2a1.3 1.3 0 1 0 0-2.6H10v-1.3a1.3 1.3 0 1 0-2.6 0V11H6.1a1.3 1.3 0 1 0 0 2.6H7.4v1.3a1.3 1.3 0 1 0 2.6 0v-1.4Z"/>
+</svg>
+<div class="platform-heading-text">
+<h2>Chrome extensions</h2>
+<p class="platform-heading-ja">Chrome 拡張</p>
+</div>
+</div>
+<div class="app-grid">
+<a class="app-card" href="https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm" rel="noopener noreferrer" target="_blank">
+<img alt="" class="app-icon" height="56" src="assets/product-icons/github-translate.png" width="56"/>
+<div class="app-card-body">
+<h3 class="app-card-title">GitHub Translate</h3>
+<p class="app-card-desc">Puts short Japanese labels beside github.com menus, tabs, and buttons.</p>
+<p class="app-card-desc-ja">github.com のメニューやタブの横に、短い日本語を並記します。</p>
+<div class="app-card-meta">
+<span class="badge">Free</span>
+</div>
+</div>
+</a>
+<a class="app-card" href="https://chromewebstore.google.com/detail/pin-guard/hjgldkodbpkdgegobbaafhjkhgeinfac" rel="noopener noreferrer" target="_blank">
+<img alt="" class="app-icon" height="56" src="assets/product-icons/pin-guard.png" width="56"/>
+<div class="app-card-body">
+<h3 class="app-card-title">Pin Guard</h3>
+<p class="app-card-desc">Keeps Chrome pinned tabs from showing another site.</p>
+<p class="app-card-desc-ja">Chromeの固定タブが別サイトを表示しないようにピン留めします。</p>
+<div class="app-card-meta">
+<span class="badge">Free</span>
+</div>
+</div>
+</a>
+<a class="app-card" href="https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj" rel="noopener noreferrer" target="_blank">
+<img alt="" class="app-icon" height="56" src="assets/product-icons/taumemo.png" width="56"/>
+<div class="app-card-body">
+<h3 class="app-card-title">TauMemo</h3>
+<p class="app-card-desc">Opens a Chrome Side Panel memo that auto-saves on your device.</p>
+<p class="app-card-desc-ja">Chrome のサイドパネルでメモを取り、端末内に自動保存します。</p>
+<div class="app-card-meta">
+<span class="badge">Free</span>
+</div>
+</div>
+</a>
+</div>
+</div>
 
-      <div class="products">
-
-        <article class="product rise">
-          <div class="product-meta">
-            <img class="product-icon" src="product/taubar/assets/icon.png" width="44" height="44" alt="">
-            <div>
-              <h3>TauBar</h3>
-              <span class="platform"><svg class="apple-mark" viewBox="0 0 814 1000" aria-hidden="true" focusable="false"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.3 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.8 123.1s-85.5-39.5-164-39.5c-80.5 0-107.8 40.8-165.9 40.8s-105.6-57-155.8-127.1C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-213.6c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"/></svg>MacOS</span>
-            </div>
-          </div>
-          <div>
-            <p>A Windows-style taskbar for Mac — switch by window title, pin apps, and keep a Start menu where you expect it.</p>
-            <p>WindowsからMacに乗り換えたユーザーにおすすめ。<br>ウィンドウ単位で切り替えられる、使い慣れたタスクバー。</p>
-          </div>
-          <div class="doc-links">
-            <a href="product/taubar/">Website</a>
-            <a href="https://github.com/tau-leap/taubar/releases" target="_blank" rel="noopener noreferrer">Download</a>
-            <a href="product/taubar/terms-of-service.html">Terms of Service</a>
-            <a href="product/taubar/privacy-policy.html">Privacy Policy</a>
-          </div>
-        </article>
-
-        <article class="product rise">
-          <div class="product-meta">
-            <img class="product-icon" src="product/tausql/assets/icon.png" width="44" height="44" alt="">
-            <div>
-              <h3>TauSQL</h3>
-              <span class="platform"><svg class="apple-mark" viewBox="0 0 814 1000" aria-hidden="true" focusable="false"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.3 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.8 123.1s-85.5-39.5-164-39.5c-80.5 0-107.8 40.8-165.9 40.8s-105.6-57-155.8-127.1C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-213.6c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"/></svg>MacOS <span class="soon">coming soon</span></span>
-            </div>
-          </div>
-          <div>
-            <p>Load local CSV, TSV and Parquet files into a bundled DuckDB engine and query them with SQL. No server, no sign-in.</p>
-            <p>ローカルの CSV / TSV / Parquet を DuckDB に読み込み、<br>SQL で横断的に分析できるデスクトップアプリ。</p>
-          </div>
-          <div class="doc-links">
-            <a href="product/tausql/">Website</a>
-            <a href="https://github.com/tau-leap/tausql" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="product/tausql/terms-of-service.html">Terms of Service</a>
-            <a href="product/tausql/privacy-policy.html">Privacy Policy</a>
-          </div>
-        </article>
-
-        <article class="product rise">
-          <div class="product-meta">
-            <img class="product-icon" src="product/taupad/assets/icon.png" width="44" height="44" alt="">
-            <div>
-              <h3>TauPad</h3>
-              <span class="platform"><svg class="apple-mark" viewBox="0 0 814 1000" aria-hidden="true" focusable="false"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.3 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.8 123.1s-85.5-39.5-164-39.5c-80.5 0-107.8 40.8-165.9 40.8s-105.6-57-155.8-127.1C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-213.6c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"/></svg>MacOS <span class="soon">coming soon</span></span>
-            </div>
-          </div>
-          <div>
-            <p>A lightweight text editor built for fast launch, with multi-tab editing, encoding and line-ending control.</p>
-            <p>高速起動と軽さを重視した、シンプルなテキストエディタ。</p>
-          </div>
-          <div class="doc-links">
-            <a href="product/taupad/">Website</a>
-            <a href="https://github.com/tau-leap/taupad" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="product/taupad/terms-of-service.html">Terms of Service</a>
-            <a href="product/taupad/privacy-policy.html">Privacy Policy</a>
-          </div>
-        </article>
-
-        <article class="product rise">
-          <div class="product-meta">
-            <img class="product-icon" src="product/taudiff/assets/icon.png" width="44" height="44" alt="">
-            <div>
-              <h3>TauDiff</h3>
-              <span class="platform"><svg class="apple-mark" viewBox="0 0 814 1000" aria-hidden="true" focusable="false"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.3 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.8 123.1s-85.5-39.5-164-39.5c-80.5 0-107.8 40.8-165.9 40.8s-105.6-57-155.8-127.1C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-213.6c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"/></svg>MacOS <span class="soon">coming soon</span></span>
-            </div>
-          </div>
-          <div>
-            <p>Compare two text files side by side, edit either pane and save — a focused diff tool with nothing else attached.</p>
-            <p>左右2ペインでテキストの差分を表示し、<br>そのまま編集・保存できる diff ツール。</p>
-          </div>
-          <div class="doc-links">
-            <a href="product/taudiff/">Website</a>
-            <a href="https://github.com/tau-leap/taudiff" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="product/taudiff/terms-of-service.html">Terms of Service</a>
-            <a href="product/taudiff/privacy-policy.html">Privacy Policy</a>
-          </div>
-        </article>
-
-        <article class="product rise">
-          <div class="product-meta">
-            <img class="product-icon" src="assets/product-icons/github-translate.png" width="44" height="44" alt="">
-            <div>
-              <h3>GitHub Translate</h3>
-              <span class="platform"><svg class="chrome-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#EA4335" d="M24 4a20 20 0 0 0-17.37 10L14.8 26.2A9.5 9.5 0 0 1 24 14.5h17.07A20 20 0 0 0 24 4z"/><path fill="#FBBC04" d="M6.63 14A20 20 0 0 0 4 24c0 2.7.54 5.27 1.5 7.6L15.9 24a9.5 9.5 0 0 1-1.1-4.45L6.63 14z"/><path fill="#34A853" d="M24 33.5a9.5 9.5 0 0 1-8.2-4.7L5.5 31.6A20 20 0 0 0 24 44c5.9 0 11.2-2.55 14.85-6.6L29.2 28.85A9.45 9.45 0 0 1 24 33.5z"/><path fill="#4285F4" d="M41.07 14.5H24a9.5 9.5 0 0 1 8.2 4.7l9.65 8.55A20.06 20.06 0 0 0 44 24c0-3.5-.9-6.78-2.93-9.5z"/><circle fill="#4285F4" cx="24" cy="24" r="7"/><circle fill="#fff" cx="24" cy="24" r="4.2"/></svg>Chrome extension</span>
-            </div>
-          </div>
-          <div>
-            <p>Shows small Japanese labels beside github.com UI — menus, tabs and buttons — with hover tips. No translation API, no network calls.</p>
-            <p>github.com のメニューやタブの横に小さな日本語を常時並記。<br>ホバーで説明も表示。<br>翻訳 API は使いません。</p>
-          </div>
-          <div class="doc-links">
-            <a href="https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>
-          </div>
-        </article>
-
-        <article class="product rise">
-          <div class="product-meta">
-            <img class="product-icon" src="assets/product-icons/pin-guard.png" width="44" height="44" alt="">
-            <div>
-              <h3>Pin Guard</h3>
-              <span class="platform"><svg class="chrome-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#EA4335" d="M24 4a20 20 0 0 0-17.37 10L14.8 26.2A9.5 9.5 0 0 1 24 14.5h17.07A20 20 0 0 0 24 4z"/><path fill="#FBBC04" d="M6.63 14A20 20 0 0 0 4 24c0 2.7.54 5.27 1.5 7.6L15.9 24a9.5 9.5 0 0 1-1.1-4.45L6.63 14z"/><path fill="#34A853" d="M24 33.5a9.5 9.5 0 0 1-8.2-4.7L5.5 31.6A20 20 0 0 0 24 44c5.9 0 11.2-2.55 14.85-6.6L29.2 28.85A9.45 9.45 0 0 1 24 33.5z"/><path fill="#4285F4" d="M41.07 14.5H24a9.5 9.5 0 0 1 8.2 4.7l9.65 8.55A20.06 20.06 0 0 0 44 24c0-3.5-.9-6.78-2.93-9.5z"/><circle fill="#4285F4" cx="24" cy="24" r="7"/><circle fill="#fff" cx="24" cy="24" r="4.2"/></svg>Chrome extension</span>
-            </div>
-          </div>
-          <div>
-            <p>Keeps pinned tabs on their original domain — if a link would take them elsewhere, the destination opens in a new tab and the pin stays put.</p>
-            <p>固定タブが別ドメインへ遷移するのを防ぎ、<br>遷移先を新しいタブで開きます。</p>
-          </div>
-          <div class="doc-links">
-            <a href="https://chromewebstore.google.com/detail/pin-guard/hjgldkodbpkdgegobbaafhjkhgeinfac" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>
-          </div>
-        </article>
-
-        <article class="product rise">
-          <div class="product-meta">
-            <img class="product-icon" src="assets/product-icons/taumemo.png" width="44" height="44" alt="">
-            <div>
-              <h3>TauMemo</h3>
-              <span class="platform"><svg class="chrome-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#EA4335" d="M24 4a20 20 0 0 0-17.37 10L14.8 26.2A9.5 9.5 0 0 1 24 14.5h17.07A20 20 0 0 0 24 4z"/><path fill="#FBBC04" d="M6.63 14A20 20 0 0 0 4 24c0 2.7.54 5.27 1.5 7.6L15.9 24a9.5 9.5 0 0 1-1.1-4.45L6.63 14z"/><path fill="#34A853" d="M24 33.5a9.5 9.5 0 0 1-8.2-4.7L5.5 31.6A20 20 0 0 0 24 44c5.9 0 11.2-2.55 14.85-6.6L29.2 28.85A9.45 9.45 0 0 1 24 33.5z"/><path fill="#4285F4" d="M41.07 14.5H24a9.5 9.5 0 0 1 8.2 4.7l9.65 8.55A20.06 20.06 0 0 0 44 24c0-3.5-.9-6.78-2.93-9.5z"/><circle fill="#4285F4" cx="24" cy="24" r="7"/><circle fill="#fff" cx="24" cy="24" r="4.2"/></svg>Chrome extension</span>
-            </div>
-          </div>
-          <div>
-            <p>A simple Side Panel memo that auto-saves locally in your browser, with snippets for the current time, tab URL and custom text.</p>
-            <p>Chrome のサイドパネルで使えるシンプルなメモ。<br>入力は端末内に自動保存され、定型文スニペットも使えます。</p>
-          </div>
-          <div class="doc-links">
-            <a href="https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="band purpose">
-    <div class="shell rise">
-      <h2>Purpose</h2>
-      <p>TauLeap exists to make the tools we kept wishing were already on the desk. They stay small. They run on your machine, not ours.</p>
-      <p class="purpose-ja">机の上にあってほしい道具を、自分たちで作るために TauLeap をはじめました。小さく保つ。データは端末の中に置く。</p>
-    </div>
-  </section>
-
-  <section class="band contact" id="contact">
-    <div class="shell rise">
-      <h2>Contact</h2>
-      <p>Questions about a product, a licence, or how we handle your data — one address reaches us for everything.</p>
-      <p>プロダクト・ライセンス・データの取り扱いに関するお問い合わせは、こちらまでご連絡ください。</p>
-      <a class="mail js-email" href="#contact-email" data-u="info" data-d="tauleap.com">email</a>
-    </div>
-  </section>
-
+<div class="platform-group" id="coming-soon">
+<div class="platform-heading">
+<svg class="platform-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="4" width="18" height="12" rx="1.5"/>
+  <path d="M8 20h8"/>
+  <path d="M12 16v4"/>
+</svg>
+<div class="platform-heading-text">
+<h2>Coming soon</h2>
+<p class="platform-heading-ja">準備中 · Mac アプリ</p>
+</div>
+</div>
+<div class="app-grid app-grid-single">
+<a class="app-card is-soon" href="product/tausql/">
+<img alt="" class="app-icon" height="56" src="product/tausql/assets/icon.png" width="56"/>
+<div class="app-card-body">
+<h3 class="app-card-title">TauSQL</h3>
+<p class="app-card-desc">Loads local CSV, TSV, and Parquet into DuckDB so you can query them with SQL.</p>
+<p class="app-card-desc-ja">ローカルの CSV / TSV / Parquet を DuckDB に読み込み、SQL でクエリできます。</p>
+<div class="app-card-meta">
+<span class="badge badge-soon">Coming soon</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="shell">
+<h2>Contact</h2>
+<p>Product, licence, or data questions go to one address.</p>
+<p>プロダクト・ライセンス・データの問い合わせはこちら。</p>
+<a class="mail js-email" data-d="tauleap.com" data-u="info" href="#contact-email">email</a>
+</div>
+</section>
 </main>
-
 <footer class="site-foot">
-  <div class="shell">
-    <div class="foot-main">
-      <span>&copy; 2026 TauLeap</span>
-      <span>TauBar &middot; TauSQL &middot; TauPad &middot; TauDiff &middot; GitHub Translate &middot; Pin Guard &middot; TauMemo</span>
-    </div>
-    <a class="support-link" href="https://buy.polar.sh/polar_cl_QaRp7E5ZmUJIgkGfaY303D8nl0AAl69xjlJYS14sHu1" target="_blank" rel="noopener noreferrer" aria-label="Support TauLeap work">
-      <svg class="support-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path fill="currentColor" d="M4.5 5.25A.75.75 0 0 1 5.25 4.5h11.5a.75.75 0 0 1 .75.75V7h1.25A2.75 2.75 0 0 1 21.5 9.75v.5A3.75 3.75 0 0 1 17.75 14H17.5v1.1A4.4 4.4 0 0 1 13.1 19.5H8.9A4.4 4.4 0 0 1 4.5 15.1V5.25Zm13 6.5h.25a2.25 2.25 0 0 0 2.25-2.25v-.5a1.25 1.25 0 0 0-1.25-1.25H17.5v4Zm-11.5-5.5v8.85A2.9 2.9 0 0 0 8.9 18h4.2A2.9 2.9 0 0 0 16 15.1V6.25H6Z"/>
-        <path fill="currentColor" d="M8.25 2.4c.55.35.9.8.9 1.35 0 .7-.55 1.2-1.15 1.6-.6.4-1.25.75-1.25 1.4 0 .35.2.65.5.85-.7-.1-1.25-.65-1.25-1.4 0-.85.7-1.4 1.3-1.8.45-.3.7-.55.7-.85 0-.2-.1-.4-.35-.55.2-.05.4-.1.6-.1Z" opacity=".7"/>
-      </svg>
-      <span>Support TauLeap work</span>
-    </a>
-  </div>
+<div class="shell">
+<div class="foot-main">
+<span>© 2026 TauLeap</span>
+<span>TauBar · TauPad · TauDiff · GitHub Translate · Pin Guard · TauMemo</span>
+</div>
+<a aria-label="Support TauLeap work" class="support-link" href="https://buy.polar.sh/polar_cl_QaRp7E5ZmUJIgkGfaY303D8nl0AAl69xjlJYS14sHu1" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" class="support-icon" focusable="false" viewbox="0 0 24 24">
+<path d="M4.5 5.25A.75.75 0 0 1 5.25 4.5h11.5a.75.75 0 0 1 .75.75V7h1.25A2.75 2.75 0 0 1 21.5 9.75v.5A3.75 3.75 0 0 1 17.75 14H17.5v1.1A4.4 4.4 0 0 1 13.1 19.5H8.9A4.4 4.4 0 0 1 4.5 15.1V5.25Zm13 6.5h.25a2.25 2.25 0 0 0 2.25-2.25v-.5a1.25 1.25 0 0 0-1.25-1.25H17.5v4Zm-11.5-5.5v8.85A2.9 2.9 0 0 0 8.9 18h4.2A2.9 2.9 0 0 0 16 15.1V6.25H6Z" fill="currentColor"></path>
+</svg>
+<span>Support</span>
+</a>
+</div>
 </footer>
-
-<script>
-(function () {
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-  var items = document.querySelectorAll('.rise');
-
-  if (reduce.matches || !('IntersectionObserver' in window)) {
-    items.forEach(function (el) { el.classList.add('is-in'); });
-    return;
-  }
-
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-in');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: '0px 0px -12% 0px', threshold: 0.1 });
-
-  items.forEach(function (el) { observer.observe(el); });
-
-  var plane = document.querySelector('.hero-plane span');
-  if (plane) {
-    var ticking = false;
-    window.addEventListener('scroll', function () {
-      if (ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(function () {
-        var shift = Math.min(window.scrollY, 700) * 0.07;
-        plane.style.transform = 'translate(14%, calc(4% + ' + shift + 'px))';
-        ticking = false;
-      });
-    }, { passive: true });
-  }
-})();
-</script>
-
 <script src="assets/js/contact.js"></script>
 </body>
 </html>

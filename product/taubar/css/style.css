@@ -518,6 +518,8 @@ main > .download { width: min(1120px, calc(100% - 3rem)); margin-bottom: 7rem; p
 .download .btn { position: relative; z-index: 1; margin-top: 0.75rem; }
 .site-footer { width: min(1120px, 100%); margin: 0 auto; padding: 3.5rem 1.5rem 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; color: var(--muted); }
 .footer-main p { margin: 0.8rem 0 0; font-size: 0.85rem; font-weight: 600; }
+.hub-link { display: inline-flex; margin-top: 1rem; font-size: 0.82rem; font-weight: 700; color: var(--blue); }
+.hub-link:hover { text-decoration: underline; }
 .footer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; justify-self: end; min-width: 300px; }
 .footer-links div { display: flex; flex-direction: column; gap: 0.55rem; }
 .footer-links strong { margin-bottom: 0.3rem; color: var(--ink); font-size: 0.8rem; }
@@ -527,6 +529,7 @@ main > .download { width: min(1120px, calc(100% - 3rem)); margin-bottom: 7rem; p
 .legal, .thanks { max-width: 640px; margin: 4rem auto; padding: 0 1.5rem; line-height: 1.7; }
 .thanks-page { display: grid; place-items: center; min-height: 100vh; }
 .thanks { text-align: center; }
+.thanks .hub-link { display: inline-block; margin-top: 1.25rem; }
 
 @media (max-width: 980px) {
   .nav { display: none; }

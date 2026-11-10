@@ -15,8 +15,8 @@ Each legal document contains an English section followed by a Japanese section o
 
 ## Chrome extensions
 
-| Product | Store |
-| --- | --- |
-| TauMemo | [Chrome Web Store](https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj) |
-| GitHub Translate | [Chrome Web Store](https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm) |
-| Pin Guard | [Chrome Web Store](https://chromewebstore.google.com/detail/pin-guard/hjgldkodbpkdgegobbaafhjkhgeinfac) | 
+| Product | Store | GitHub | Feedback |
+| --- | --- | --- | --- |
+| TauMemo | [Chrome Web Store](https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj) | | |
+| GitHub Translate | [Chrome Web Store](https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm) | [repo](https://github.com/tau-leap/github-translate) | [feedback](https://github.com/tau-leap/github-translate/issues/new/choose) |
+| Pin Guard | [Chrome Web Store](https://chromewebstore.google.com/detail/pin-guard/hjgldkodbpkdgegobbaafhjkhgeinfac) | | | 

@@ -1,5 +1,6 @@
 const STRINGS = {
   en: {
+    'nav.hub': 'TauLeap',
     'nav.features': 'Features',
     'nav.pricing': 'Pricing',
     'nav.faq': 'FAQ',
@@ -100,8 +101,10 @@ const STRINGS = {
     'footer.product': 'Product',
     'footer.support': 'Support',
     'footer.contact': 'Contact',
+    'footer.hub': 'All TauLeap products',
   },
   ja: {
+    'nav.hub': 'TauLeap',
     'nav.features': '機能',
     'nav.pricing': '価格',
     'nav.faq': 'よくある質問',
@@ -202,6 +205,7 @@ const STRINGS = {
     'footer.product': '製品',
     'footer.support': 'サポート',
     'footer.contact': 'お問い合わせ',
+    'footer.hub': 'TauLeap の全プロダクト',
   },
 };
 

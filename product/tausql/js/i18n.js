@@ -2,6 +2,7 @@ import { createI18n } from "../../../assets/js/product-site.js";
 
 const STRINGS = {
   en: {
+    "nav.hub": "TauLeap",
     "nav.features": "Features",
     "nav.faq": "FAQ",
     "nav.menu": "Open menu",
@@ -53,6 +54,7 @@ const STRINGS = {
     "trust.terms": "Terms of service",
   },
   ja: {
+    "nav.hub": "TauLeap",
     "nav.features": "機能",
     "nav.faq": "よくある質問",
     "nav.menu": "メニューを開く",

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TauBar と uBar・Tungsten Edge・Winstrix・DockDoor の比較：Mac のタスクバーの代替（2026年）</title>
+<meta name="description" content="Mac 向けのウィンドウ単位タスクバーを正直に比べました。TauBar は macOS 26 以降・Apple Silicon のみ対応です。価格・対応環境・ライセンスは 2026-11-12 に確認しました。">
+<link rel="canonical" href="https://tauleap.com/product/taubar/ja/alternatives/">
+<link rel="alternate" hreflang="en" href="https://tauleap.com/product/taubar/alternatives/">
+<link rel="alternate" hreflang="ja" href="https://tauleap.com/product/taubar/ja/alternatives/">
+<link rel="alternate" hreflang="x-default" href="https://tauleap.com/product/taubar/alternatives/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://tauleap.com/product/taubar/ja/alternatives/">
+<meta property="og:title" content="TauBar と uBar・Tungsten Edge・Winstrix・DockDoor の比較">
+<meta property="og:description" content="Mac 向けのウィンドウ単位タスクバーを正直に比べました。TauBar は macOS 26 以降・Apple Silicon のみ対応です。">
+<meta property="og:image" content="https://tauleap.com/product/taubar/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" sizes="180x180">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TauBar",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "macOS 26 以降",
+  "processorRequirements": "Apple Silicon",
+  "softwareVersion": "1.0.1",
+  "inLanguage": "ja",
+  "url": "https://tauleap.com/product/taubar/ja/",
+  "downloadUrl": "https://github.com/tau-leap/taubar/releases/latest",
+  "image": "https://tauleap.com/product/taubar/assets/og.png",
+  "description": "TauBar は、Mac の画面下にウィンドウ単位のタスクバーを足すアプリです。macOS 26 以降・Apple Silicon のみ対応。",
+  "publisher": {
+    "@type": "Organization",
+    "name": "TauLeap",
+    "url": "https://tauleap.com"
+  },
+  "offers": [
+    {"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD"},
+    {"@type": "Offer", "name": "Pro Monthly", "price": "0.99", "priceCurrency": "USD"},
+    {"@type": "Offer", "name": "Pro Yearly", "price": "9.99", "priceCurrency": "USD"},
+    {"@type": "Offer", "name": "Pro Lifetime", "price": "19.99", "priceCurrency": "USD"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "ja",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Intel Mac や macOS 15 でも動きますか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "動きません。TauBar は macOS 26（Tahoe）以降の Apple Silicon 搭載 Mac が必要です。Intel Mac や古い macOS をお使いなら、Tungsten Edge（macOS 12 以降）、DockDoor（macOS 13 以降）、Winstrix（macOS 14 以降）をご検討ください。"}
+    },
+    {
+      "@type": "Question",
+      "name": "無料で使えますか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "10日間はすべての機能を無料で使えます。その後も、タスクバーの基本機能は無料のままです。ウィンドウ切り替え、ピン留め、スタートメニュー、時計とカレンダー、マルチディスプレイが含まれます。Pro は月 $0.99・年 $9.99・買い切り $19.99 で、2台まで使えます。"}
+    },
+    {
+      "@type": "Question",
+      "name": "Dock の代わりになりますか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "どちらかを選ぶ必要はありません。Dock との併用をおすすめしています。Dock を左右に寄せて、タスクバーを主役にする使い方もできます。"}
+    },
+    {
+      "@type": "Question",
+      "name": "オープンソースですか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "いいえ。オープンソースを重視するなら、GPL-3.0 の Tungsten Edge か DockDoor をご検討ください。"}
+    },
+    {
+      "@type": "Question",
+      "name": "DockDoor とは何が違いますか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "DockDoor は、標準の Dock にウィンドウのプレビューと ⌥Tab の切り替えを足すアプリです。TauBar は画面下に別のバーを置き、ウィンドウを一つずつタイトル付きの項目として並べます。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{--fg:#1d1d1f;--muted:#6e6e73;--line:#e5e5ea;--bg:#fff;--soft:#f5f5f7;--accent:#0a66d8;--warn:#fff7e0;--warnline:#f0c24b}
+@media (prefers-color-scheme:dark){:root{--fg:#f5f5f7;--muted:#a1a1a6;--line:#38383a;--bg:#111113;--soft:#1c1c1e;--accent:#4c9dff;--warn:#2a2410;--warnline:#8a6d1e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Hiragino Sans","SF Pro Text","Helvetica Neue",Arial,sans-serif}
+.top{max-width:1060px;margin:0 auto;padding:16px 20px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.92rem}
+.top a{color:var(--fg);text-decoration:none} .top .brand{display:inline-flex;align-items:center;gap:8px;font-weight:700}
+.top .lang{color:var(--accent)}
+main{max-width:1060px;margin:0 auto;padding:24px 20px 64px}
+h1{font-size:1.9rem;line-height:1.35;margin:0 0 16px} h2{font-size:1.35rem;margin:40px 0 12px}
+a{color:var(--accent)} p,li{max-width:760px} .muted{color:var(--muted);font-size:.9rem}
+.req{background:var(--warn);border:1px solid var(--warnline);border-radius:10px;padding:12px 16px;font-weight:600;margin:0 0 20px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:860px;font-size:.92rem}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+thead th{background:var(--soft);position:sticky;top:0} th[scope=row]{width:150px}
+.tb{background:rgba(10,102,216,.07)} tr.note td{color:var(--muted);font-size:.85rem;background:var(--soft)}
+tbody tr:last-child td{border-bottom:0}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0;max-width:760px}
+summary{cursor:pointer;font-weight:600} details p{margin:8px 0 0}
+.cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:10px 18px;border-radius:999px;font-weight:600}
+code{background:var(--soft);padding:1px 5px;border-radius:4px}
+footer{max-width:1060px;margin:0 auto;padding:0 20px 40px;font-size:.9rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="top">
+<a class="brand" href="../"><img src="../../assets/logo.png" width="28" height="28" alt="">TauBar</a>
+<a class="lang" href="../../alternatives/" hreflang="en" lang="en">English</a>
+</header>
+<main>
+<h1>TauBar と代替アプリ：Mac のウィンドウ単位タスクバー</h1>
+<p class="req">TauBar は macOS 26（Tahoe）以降・Apple Silicon のみ対応です。お使いの Mac が当てはまらない場合は、下の代替アプリをご覧ください。</p>
+<p>TauBar は、Mac の画面下にウィンドウ単位のタスクバーを足すアプリです。このページでは、よく一緒に検討される <strong>uBar</strong>、<strong>Tungsten Edge</strong>、<strong>Winstrix</strong>、<strong>DockDoor</strong> と比べます。TauBar は私たちの製品なので、その前提で読んでください。他社の情報はすべて各社の公式ページへのリンク付きで、<strong>2026-11-12</strong> に確認しました。価格や版は変わることがあるため、購入前にリンク先も確認してください。</p>
+
+<h2 id="not-for">TauBar が向かない人</h2>
+<ul>
+<li><strong>Intel Mac や macOS 15 以前の Mac を使っている人。</strong> TauBar は動きません。<a href="https://tungstenedge.app/en/" rel="noopener">Tungsten Edge</a>（macOS 12 以降、Intel と Apple silicon）、<a href="https://winstrix.app/" rel="noopener">Winstrix</a>（macOS 14 以降、Universal）、<a href="https://dockdoor.net/" rel="noopener">DockDoor</a>（macOS 13 以降、Apple silicon と Intel）を検討してください。なお、現行の uBar 5 も TauBar と同じく macOS 26 以降・Apple Silicon のみです。</li>
+<li><strong>オープンソースがいい人。</strong> TauBar はソース非公開です。Tungsten Edge と DockDoor は GitHub で GPL-3.0 として公開されています。</li>
+<li><strong>Dock はそのままで、ウィンドウのプレビューだけ欲しい人。</strong> それなら無料の DockDoor が合っています。</li>
+<li><strong>Mac 全体を Windows のように動かしたい人。</strong> ショートカット、スクロール、ウィンドウのスナップ、クリップボード履歴まで変えたいなら Winstrix です。TauBar はタスクバーを足すだけで、ウィンドウのタイル配置もしません。</li>
+<li><strong>細かく設定したい人。</strong> <a href="https://ubarapp.com/" rel="noopener">uBar</a> は長年磨かれてきたアプリで、Dock 型の表示、複数段、画面のどの端にも置ける配置、テーマ、法人ライセンスがあります。</li>
+</ul>
+
+<h2 id="what">TauBar が向く人</h2>
+<p>Dock はアプリごとにまとめて表示します。TauBar は、開いているウィンドウを一つずつ、タイトル付きで画面下のバーに並べます。Chrome のプロファイルを3つ開いていても、Finder のウィンドウが何枚あっても、目的のウィンドウを直接クリックできます。Chrome のプロファイルも表示されます。</p>
+<p>無料プランには次の機能も含まれます。</p>
+<ul>
+<li>アプリのピン留め</li>
+<li>アプリの起動と検索ができるスタートボタン</li>
+<li>時計と月カレンダー</li>
+<li>マルチディスプレイ</li>
+<li>自動で隠す</li>
+</ul>
+<p>Dock と併用できます。アカウントは不要で、利用状況の送信もありません。</p>
+
+<h2 id="compare">比較表</h2>
+<p class="req">TauBar は macOS 26 以降・Apple Silicon のみ対応です。2026-11-12 時点の情報です。</p>
+<div class="tablewrap"><table>
+<thead><tr><th scope="col"></th><th scope="col" class="tb">TauBar</th><th scope="col">uBar</th><th scope="col">Tungsten Edge</th><th scope="col">Winstrix</th><th scope="col">DockDoor</th></tr></thead>
+<tbody>
+<tr><th scope="row">1. 対応環境</th><td class="tb"><strong>macOS 26 以降・Apple Silicon のみ</strong></td><td>macOS 26 以降・Apple Silicon のみ（uBar 5）</td><td>macOS 12 以降・Universal（Apple silicon と Intel）</td><td>macOS 14 以降・Universal（Apple Silicon と Intel）</td><td>macOS 13 以降・Apple silicon と Intel</td></tr>
+<tr class="note"><td colspan="6">TauBar は最新環境のみ。uBar 5 以外は古い Mac でも動きます。</td></tr>
+<tr><th scope="row">2. 価格</th><td class="tb">10日間すべての機能を試用でき、その後もタスクバーの基本機能は<strong>無料</strong>。Pro は月 $0.99・年 $9.99・買い切り $19.99（2台まで）</td><td>買い切りで個人 $39・法人 $69。14日間の試用あり。uBar Cloud は任意で月 $2.99</td><td><strong>ベータ中は無料</strong>。1.0 からは買い切り $24、21日間の試用あり（founding users は無料）</td><td>買い切り $14.99、14日間の試用あり。1.x の更新を含む</td><td><strong>無料</strong>（寄付で運営）。別アプリの DockDoor Pro は $20</td></tr>
+<tr class="note"><td colspan="6">誰でも使い続けられる無料枠があるのは TauBar と DockDoor。Tungsten Edge はベータ中は無料で、founding users はその後も無料です。TauBar のサブスクは任意で、買い切りも選べます。</td></tr>
+<tr><th scope="row">3. ウィンドウ単位のタスクバー</th><td class="tb">あり。画面下のバーに、ウィンドウごとにタイトル付きで並ぶ</td><td>あり（グループ化を Never か Automatic に設定）。どの端にも置け、Dock 型にもできる</td><td>あり。アプリごとのアイコンが、ウィンドウが増えると名前付きの項目に分かれる</td><td>あり。Windows 風のタスクバーで、開いているウィンドウごとに1マス</td><td><strong>バーはなし</strong>。標準の Dock にウィンドウのプレビューを足し、⌥Tab も使える</td></tr>
+<tr class="note"><td colspan="6">ウィンドウ一つずつに専用のボタンがあるかどうか。DockDoor は同じ悩みを Dock の側から解きます。</td></tr>
+<tr><th scope="row">4. ソースと更新</th><td class="tb">ソース非公開。v1.0（2026-10-14）、1.0.1（2026-11-10）</td><td>ソース非公開（EULA）。5.0.5（2026-10-28）</td><td>オープンソース（GPL-3.0）。0.18.5 ベータ（2026-11-10）。Homebrew 公式 cask あり</td><td>ソース非公開（EULA）。1.0.36</td><td>オープンソース（GPL-3.0）。1.42.4（2026-11-08）。Homebrew あり</td></tr>
+<tr class="note"><td colspan="6">TauBar は出たばかりです。実績が長いのは uBar と DockDoor。Tungsten Edge はまだベータです。</td></tr>
+</tbody></table></div>
+
+<h2 id="better">他のアプリのほうが優れている点</h2>
+<ul>
+<li><strong>uBar</strong> は最も成熟していて、設定の幅も最大です。タスクバー型と Dock 型を選べ、画面のどの端にも置けて、最大5段まで広げられます。モニターごとのバーやテーマもあり、法人・企業向けのライセンスもあります。</li>
+<li><strong>Tungsten Edge</strong> はベータ中は無料のオープンソースで、macOS 12 以降の Intel と Apple silicon で動きます。画面収録の権限が要らず、<code>brew install --cask tungsten-edge</code> で入れられます。</li>
+<li><strong>Winstrix</strong> は買い切り $14.99 で、TauBar の買い切り（$19.99）より安く買えます。ショートカット、Alt+Tab、ウィンドウのスナップ、クリップボード履歴、Windows 風のスクロールまで揃っていて、Windows から移ってきた人にはずっと多くのことをしてくれます。</li>
+<li><strong>DockDoor</strong> は無料のオープンソースで、有料の壁もありません。標準の Dock をそのまま使えます。ホバーでのプレビューとウィンドウ切り替えで足りるなら、タスクバー自体が要らないかもしれません。</li>
+</ul>
+
+<h2 id="fits">TauBar が合う場面</h2>
+<ul>
+<li><strong>macOS 26 以降・Apple Silicon</strong> の Mac で、ウィンドウをタイトル付きで画面下に並べたいとき。</li>
+<li>試用期間のあとも、<strong>タスクバーの基本機能を無料で</strong>使い続けたいとき。Pro は任意で、月額・年額・買い切り（$19.99）から選べます。</li>
+<li>スタートボタン、カレンダー付きの時計、ピン留めしたアプリ、Chrome のプロファイルを一つのバーにまとめたいとき。</li>
+<li>権限を気にするとき。TauBar はアカウント不要で、利用状況を送信しません。アクセシビリティはウィンドウの識別とフォーカスにだけ使います。画面収録は、プレビューのサムネイルをオンにしたときだけ必要です。</li>
+</ul>
+<p><a class="cta" href="../">TauBar を10日間無料で試す</a> <span class="muted">macOS 26 以降・Apple Silicon のみ</span></p>
+
+<h2 id="ubar-alternatives">uBar の代わりになるアプリ</h2>
+<p>uBar 5 は macOS 26 以降・Apple Silicon が必要になりました。uBar の代わりを探しているなら、状況別にこう選べます。</p>
+<ul>
+<li><strong>Intel Mac や古い macOS を使っている：</strong> Tungsten Edge（macOS 12 以降）か Winstrix（macOS 14 以降）。今の Dock にプレビューが付けば十分なら DockDoor（macOS 13 以降）。</li>
+<li><strong>macOS 26 以降・Apple Silicon で、無料の基本機能か安い買い切りが欲しい：</strong> TauBar（買い切り $19.99、試用後も基本機能は無料）か Winstrix（$14.99）。</li>
+<li><strong>オープンソースがいい：</strong> Tungsten Edge か DockDoor。</li>
+</ul>
+
+<h2 id="faq">よくある質問</h2>
+<details><summary>Intel Mac や macOS 15 でも動きますか？</summary><p>動きません。TauBar は macOS 26（Tahoe）以降の Apple Silicon 搭載 Mac が必要です。Intel Mac や古い macOS をお使いなら、Tungsten Edge（macOS 12 以降）、DockDoor（macOS 13 以降）、Winstrix（macOS 14 以降）をご検討ください。</p></details>
+<details><summary>無料で使えますか？</summary><p>10日間はすべての機能を無料で使えます。その後も、タスクバーの基本機能は無料のままです。ウィンドウ切り替え、ピン留め、スタートメニュー、時計とカレンダー、マルチディスプレイが含まれます。Pro は月 $0.99・年 $9.99・買い切り $19.99 で、2台まで使えます。</p></details>
+<details><summary>Dock の代わりになりますか？</summary><p>どちらかを選ぶ必要はありません。Dock との併用をおすすめしています。Dock を左右に寄せて、タスクバーを主役にする使い方もできます。</p></details>
+<details><summary>オープンソースですか？</summary><p>いいえ。オープンソースを重視するなら、GPL-3.0 の Tungsten Edge か DockDoor をご検討ください。</p></details>
+<details><summary>DockDoor とは何が違いますか？</summary><p>DockDoor は、標準の Dock にウィンドウのプレビューと ⌥Tab の切り替えを足すアプリです。TauBar は画面下に別のバーを置き、ウィンドウを一つずつタイトル付きの項目として並べます。</p></details>
+
+<h2 id="sources">出典</h2>
+<p class="muted">他社の情報は、各社の公式サイト・GitHub・Homebrew の掲載で 2026-11-12 に確認したものです。誤りや古い情報があれば、<a href="mailto:info@tauleap.com">お知らせ</a>いただければ直します。</p>
+<ul class="muted">
+<li>TauBar: <a href="https://tauleap.com/product/taubar/ja/" rel="noopener">tauleap.com/product/taubar/ja</a> · <a href="https://github.com/tau-leap/taubar/releases" rel="noopener">GitHub Releases</a></li>
+<li>uBar: <a href="https://ubarapp.com/" rel="noopener">ubarapp.com</a> · <a href="https://ubarapp.com/alternatives" rel="noopener">ubarapp.com/alternatives</a></li>
+<li>Tungsten Edge: <a href="https://tungstenedge.app/en/" rel="noopener">tungstenedge.app</a> · <a href="https://github.com/moonbai-studio/tungsten-edge" rel="noopener">GitHub</a> · <a href="https://formulae.brew.sh/cask/tungsten-edge" rel="noopener">Homebrew</a></li>
+<li>Winstrix: <a href="https://winstrix.app/" rel="noopener">winstrix.app</a> · <a href="https://winstrix.app/windows-taskbar-on-mac" rel="noopener">winstrix.app/windows-taskbar-on-mac</a></li>
+<li>DockDoor: <a href="https://dockdoor.net/" rel="noopener">dockdoor.net</a> · <a href="https://github.com/ejbills/DockDoor" rel="noopener">GitHub</a> · <a href="https://formulae.brew.sh/cask/dockdoor" rel="noopener">Homebrew</a></li>
+</ul>
+</main>
+<footer>
+<p><a href="../">TauBar</a> · <a href="../../../../">TauLeap の全プロダクト</a> · <a href="../../privacy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

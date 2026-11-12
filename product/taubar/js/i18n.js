@@ -102,6 +102,7 @@ const STRINGS = {
     'footer.support': 'Support',
     'footer.contact': 'Contact',
     'footer.hub': 'All TauLeap products',
+    'footer.alternatives': 'Compare alternatives',
   },
   ja: {
     'nav.hub': 'TauLeap',
@@ -206,6 +207,7 @@ const STRINGS = {
     'footer.support': 'サポート',
     'footer.contact': 'お問い合わせ',
     'footer.hub': 'TauLeap の全プロダクト',
+    'footer.alternatives': '他のアプリとの比較',
   },
 };
 

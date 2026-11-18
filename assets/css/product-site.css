@@ -16,17 +16,17 @@
 }
 
 .theme-sql {
-  --accent: #e5a50c;
-  --accent-deep: #ca7d10;
-  --accent-soft: rgba(229, 165, 12, 0.14);
-  --ink: #faf6eb;
-  --muted: #c8b98a;
-  --line: rgba(229, 165, 12, 0.18);
-  --surface: #0a1a36;
-  --bg: #030507;
-  --hero-from: #030507;
-  --hero-mid: #061428;
-  --hero-to: #0a2244;
+  --accent: #a86f00;
+  --accent-deep: #7a4f00;
+  --accent-soft: rgba(242, 183, 5, 0.14);
+  --ink: #1f1a10;
+  --muted: #6b6150;
+  --line: rgba(168, 111, 0, 0.16);
+  --surface: #ffffff;
+  --bg: #fffcf5;
+  --hero-from: #fffdf7;
+  --hero-mid: #fdf5e1;
+  --hero-to: #f8ebc8;
   --font: "IBM Plex Sans JP", "IBM Plex Mono", system-ui, sans-serif;
 }
 
@@ -184,7 +184,6 @@ a:hover { text-decoration: underline; }
   color: #fff;
   box-shadow: 0 9px 24px color-mix(in srgb, var(--accent) 32%, transparent);
 }
-.theme-sql .btn-primary { color: #1a1204; }
 .btn-primary:hover { background: var(--accent-deep); }
 .btn-ghost {
   border-color: var(--line);
@@ -203,6 +202,12 @@ a:hover { text-decoration: underline; }
   padding: 2.5rem 1.5rem 2.75rem;
   background:
     radial-gradient(circle at 84% 25%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 28%),
+    linear-gradient(150deg, var(--hero-from) 0%, var(--hero-mid) 58%, var(--hero-to) 100%);
+}
+.theme-sql .hero {
+  background:
+    radial-gradient(circle at 84% 25%, rgba(242, 183, 5, 0.18), transparent 28%),
+    radial-gradient(circle at 10% 80%, rgba(242, 183, 5, 0.09), transparent 30%),
     linear-gradient(150deg, var(--hero-from) 0%, var(--hero-mid) 58%, var(--hero-to) 100%);
 }
 
@@ -521,8 +526,6 @@ main > section:not(.hero) {
 .diff-line { display: block; padding: 0.12rem 0.4rem; border-radius: 3px; }
 .diff-del { background: rgba(196, 80, 80, 0.16); color: #a33; }
 .diff-add { background: rgba(70, 150, 90, 0.16); color: #2a7; }
-.theme-sql .diff-del { color: #f0a0a0; }
-.theme-sql .diff-add { color: #8fd9a4; }
 
 .data-path {
   margin-top: 1.5rem;

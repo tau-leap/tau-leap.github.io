@@ -29,7 +29,7 @@
     <h1>Privacy Policy</h1>
     <p class="subtitle">プライバシーポリシー</p>
     <ul class="docmeta">
-      <li><strong>Last updated</strong> August 27, 2026</li>
+      <li><strong>Last updated</strong> November 19, 2026</li>
       <li><strong>Operator</strong> TauLeap</li>
       <li><strong>Contact</strong> <a class="js-email" href="#contact-email" data-u="support" data-d="tauleap.com">email</a></li>
     </ul>
@@ -42,98 +42,134 @@
     <p class="lang-divider">English</p>
 
     <h2>1. Summary</h2>
-    <p>TauSQL is a local-first desktop application. It imports CSV, TSV and Parquet files into a DuckDB database stored on your computer and lets you query them with SQL. TauLeap does not operate an account system for TauSQL, does not run analytics or telemetry inside the application, and does not receive your data files, your tables or your queries.</p>
+    <p>TauSQL is a local-first desktop application. It imports CSV, TSV and Parquet files into a DuckDB database stored on your computer and lets you query them with SQL. TauLeap does not operate a TauSQL cloud account, does not run analytics or telemetry inside the application, and does not receive your data files, your tables or your queries.</p>
+    <p>The only information that leaves your computer in connection with TauSQL relates to purchasing a licence, validating that licence, checking for updates, remote data connections you deliberately configure, DuckDB extension downloads, and any support email you choose to send.</p>
 
-    <h2>2. Information we collect</h2>
-    <p>TauLeap collects no personal information through the TauSQL application. There is no sign-up, no login, no usage tracking, no crash reporting service and no advertising identifier. The application does not embed any third-party analytics SDK.</p>
-    <p>If you contact us by email, we receive the information you choose to include in that message — typically your email address and the contents of your enquiry. We use it only to respond to you.</p>
-
-    <h2>3. Data stored on your device</h2>
-    <p>Everything TauSQL works with stays on your computer under your own user account:</p>
+    <h2>2. Data stored on your device</h2>
+    <p>Everything TauSQL works with for analysis stays on your computer under your own user account:</p>
     <ul>
       <li><strong>Imported data.</strong> The contents of the files you import are written into a DuckDB database file — <code>~/Library/Application Support/com.tauleap.tausql/main.duckdb</code> on MacOS.</li>
       <li><strong>History.</strong> Import history and SQL statement history, so you can review earlier work.</li>
       <li><strong>Settings and connection metadata.</strong> Application preferences and the details of any connections you configure.</li>
+      <li><strong>Licence materials.</strong> Your licence key and a device identifier used for activation are stored in the MacOS Keychain.</li>
       <li><strong>Exported files.</strong> Any CSV, TSV or Parquet file you export is written to the location you choose.</li>
     </ul>
-    <p>This data is never transmitted to TauLeap. Removing the application data directory removes it. Please note that files stored in your home directory may be included in backups you have configured yourself, such as Time Machine, File History or a cloud backup service.</p>
+    <p>Your imported tables, queries and analysis data are never transmitted to TauLeap. Removing the application data directory removes the local database and history. Please note that files stored in your home directory may be included in backups you have configured yourself, such as Time Machine, File History or a cloud backup service.</p>
+
+    <h2>3. Information we receive</h2>
+    <p>TauSQL itself has no sign-up, no login, no usage tracking, no crash reporting service and no advertising identifier. The application does not embed any third-party analytics SDK. We do receive limited information in these cases:</p>
+    <ul>
+      <li><strong>Purchase and subscription.</strong> Payments are processed by Polar.sh as Merchant of Record. You provide your email address and payment details directly to Polar. We receive your email address and the record of the purchase or subscription (including plan, status and related identifiers) so that we can issue and support your licence. We never see or store full payment card numbers. Polar's handling of your data is governed by <a href="https://polar.sh/legal/privacy" rel="noopener noreferrer" target="_blank">Polar's privacy policy</a>.</li>
+      <li><strong>Recurring billing.</strong> For monthly and yearly plans, Polar stores your payment method and renews the subscription until you cancel through Polar's customer portal or equivalent cancellation flow. On each renewal, we receive the updated purchase or subscription status so your licence can remain active. Lifetime purchases are one-time and are not auto-renewed.</li>
+      <li><strong>Licence activation and validation.</strong> When you activate or validate a licence, TauSQL sends your licence key and a device identifier to Polar's Customer Portal API. The device identifier is a random value generated on first use and stored in your MacOS Keychain; it is not derived from your hardware serial number and does not identify you personally. This is used solely to enforce the per-licence device limit (up to 2 devices).</li>
+      <li><strong>Support email.</strong> If you contact us by email, we receive the information you choose to include — typically your email address and the contents of your enquiry. We use it only to respond to you.</li>
+    </ul>
 
     <h2>4. Network communication</h2>
-    <p>TauSQL is designed to work offline. Network requests occur only in the following cases:</p>
+    <p>TauSQL is designed to work offline for day-to-day analysis. Network requests occur only in the following cases:</p>
     <ul>
+      <li><strong>Checkout, licence activation and validation.</strong> As described above, purchase flows and licence checks go through Polar over HTTPS.</li>
+      <li><strong>Update checks.</strong> If you check for updates from the application, TauSQL contacts GitHub Releases (or related update metadata hosted there). As with any network request, the servers involved may log your IP address and application version. Your database contents are not included.</li>
       <li><strong>Remote data connections you configure.</strong> If you connect TauSQL to a remote endpoint such as a Quack or DuckLake service, the queries you run and the data involved are sent to and received from that endpoint. That service is operated by whoever you chose to connect to, and their own terms and privacy policy apply. Credentials and access tokens for these connections are stored in your operating system keychain, not in plain text and not on our servers.</li>
       <li><strong>DuckDB extensions.</strong> TauSQL may load DuckDB extensions. If an extension is not already present locally, DuckDB may download it from the official DuckDB extension repository. This request goes to DuckDB's infrastructure and contains no personal information from your database.</li>
     </ul>
     <p>Aside from the above, TauSQL does not send your tables, queries, file names or file contents anywhere.</p>
 
-    <h2>5. Third parties</h2>
-    <p>TauLeap does not sell or share personal information as those terms are defined under the CCPA/CPRA, and we do not rent it. We do not use personal information for cross-context behavioural advertising. We use no advertising networks and no data brokers. The only third parties that can receive anything in connection with TauSQL are the remote data services you deliberately connect to, and the DuckDB extension repository described above.</p>
+    <h2>5. Why we process this data</h2>
+    <p>The controller of the personal data described in this policy is TauLeap. We process the limited data above to deliver the software you purchased, to issue and verify licences and prevent licence abuse, to keep subscription licences current after renewal, to provide updates, and to respond to support enquiries. We do not use it for profiling or advertising.</p>
+    <p>Where the GDPR or UK GDPR applies, we rely on these legal bases: performance of a contract with you (purchases, licences, renewals and updates); compliance with a legal obligation (retaining purchase records for accounting and tax); and, for support emails, taking steps at your request or our legitimate interest in answering enquiries.</p>
 
-    <h2>6. This website</h2>
-    <p>This page is published on GitHub Pages, operated by GitHub, Inc. GitHub may log standard request information such as IP address for security and operational purposes. Web fonts on this page are served by Google Fonts. We run no analytics, no cookies and no tracking pixels on this site.</p>
+    <h2>6. Retention</h2>
+    <p>Purchase records, subscription status and licence records are retained for as long as your licence or subscription is active and afterwards as required for accounting, tax and legal purposes. Support emails are retained for as long as needed to handle the enquiry and any follow-up. Payment method details for recurring plans are held by Polar, not by TauLeap.</p>
 
-    <h2>7. Security</h2>
-    <p>Because your data stays on your own machine, its security depends primarily on the security of that machine. We recommend using full-disk encryption and keeping your operating system up to date. Access tokens you enter for remote connections are handed to your operating system keychain rather than stored by the application in plain text.</p>
+    <h2>7. Third parties</h2>
+    <p>TauLeap does not sell or share personal information as those terms are defined under the CCPA/CPRA, and we do not rent it. We do not use personal information for cross-context behavioural advertising. We use no advertising networks and no data brokers.</p>
+    <p>The third parties that can receive information in connection with TauSQL are Polar (payments, subscriptions and licence activation), GitHub (update hosting and this website), the DuckDB extension repository, and any remote data service you deliberately connect to. Each acts under its own privacy policy for the data it receives. Some of these providers are established outside Japan and the EEA — typically in the United States — and may process data there under the safeguards those providers themselves offer.</p>
 
-    <h2>8. Children</h2>
+    <h2>8. This website</h2>
+    <p>This page is published on GitHub Pages, operated by GitHub, Inc. GitHub may log standard request information such as IP address for security and operational purposes. Web fonts on this page are served by Google Fonts. Checkout links on the product page take you to Polar; that checkout experience is operated by Polar, not by this website. We run no analytics, no cookies and no tracking pixels on this site.</p>
+
+    <h2>9. Security</h2>
+    <p>Because your analysis data stays on your own machine, its security depends primarily on the security of that machine. We recommend using full-disk encryption and keeping your operating system up to date. Licence keys, the device identifier and access tokens for remote connections are handed to your operating system keychain rather than stored by the application in plain text. Communication with Polar uses encrypted HTTPS connections.</p>
+
+    <h2>10. Children</h2>
     <p>TauSQL is a general-purpose developer and analyst tool and is not directed at children. We do not knowingly collect information from children.</p>
 
-    <h2>9. Your rights</h2>
-    <p>Since we hold no personal data about TauSQL users, there is normally nothing for us to disclose, correct or delete. If you have emailed us and would like that correspondence removed, write to <a class="js-email" href="#contact-email" data-u="support" data-d="tauleap.com">email</a> and we will delete it. If you are in the EEA or the United Kingdom, the rights of access, rectification, erasure, restriction, portability, objection and complaint to a supervisory authority apply to that correspondence.</p>
+    <h2>11. Your rights</h2>
+    <p>You may ask us what purchase, subscription or licence data we hold about you, request correction of it, or request deletion. Note that we may need to retain purchase records to meet accounting and tax obligations, and that deleting a licence record will deactivate the licence. Billing details, invoices and cancellation for subscriptions are primarily managed through Polar. Write to <a class="js-email" href="#contact-email" data-u="support" data-d="tauleap.com">email</a>.</p>
+    <p>If you are in the EEA or the United Kingdom, you also have the right to access, rectify, erase, restrict or object to our processing of your personal data, to receive a copy of it in a portable format, and to lodge a complaint with your local supervisory authority. Use the same contact address. These rights are subject to the limits of applicable law, including the retention of purchase records described above.</p>
 
-    <h2>10. Changes to this policy</h2>
+    <h2>12. Changes to this policy</h2>
     <p>If we change how TauSQL handles data, we will update this page and revise the "Last updated" date above. Material changes will be reflected here before or at the time they take effect.</p>
 
-    <h2>11. Contact</h2>
+    <h2>13. Contact</h2>
     <p>TauLeap — <a class="js-email" href="#contact-email" data-u="support" data-d="tauleap.com">email</a></p>
 
 
     <p class="lang-divider">日本語</p>
 
     <h2>1. 概要</h2>
-    <p>TauSQL は、端末内で完結するデスクトップアプリケーションです。CSV / TSV / Parquet ファイルをお使いのコンピュータ上の DuckDB データベースに取り込み、SQL で分析できます。TauLeap は TauSQL 向けにアカウント機能を提供しておらず、アプリ内で解析・テレメトリを実行することもありません。お客様のデータファイル、テーブル、クエリを受け取ることはありません。</p>
+    <p>TauSQL は、端末内で完結するデスクトップアプリケーションです。CSV / TSV / Parquet ファイルをお使いのコンピュータ上の DuckDB データベースに取り込み、SQL で分析できます。TauLeap は TauSQL 向けのクラウドアカウントを提供しておらず、アプリ内で解析・テレメトリを実行することもありません。お客様のデータファイル、テーブル、クエリを受け取ることはありません。</p>
+    <p>TauSQL に関連して端末の外に出る情報は、ライセンスの購入・検証、アップデートの確認、お客様が意図的に設定したリモート接続、DuckDB 拡張のダウンロード、およびお客様が任意で送るサポートメールに限られます。</p>
 
-    <h2>2. 収集する情報</h2>
-    <p>TauLeap は、TauSQL アプリケーションを通じて個人情報を一切収集しません。会員登録、ログイン、利用状況の追跡、クラッシュレポート送信、広告識別子のいずれもありません。第三者の解析 SDK も組み込んでいません。</p>
-    <p>メールでお問い合わせいただいた場合は、そのメールに含まれる情報（通常はメールアドレスとお問い合わせ内容）を受け取ります。これは返信のためだけに利用します。</p>
-
-    <h2>3. 端末内に保存されるデータ</h2>
-    <p>TauSQL が扱うデータは、すべてお客様のコンピュータのユーザーアカウント配下に保存されます。</p>
+    <h2>2. 端末内に保存されるデータ</h2>
+    <p>分析のために TauSQL が扱うデータは、すべてお客様のコンピュータのユーザーアカウント配下に保存されます。</p>
     <ul>
       <li><strong>取り込んだデータ</strong> — インポートしたファイルの内容は DuckDB のデータベースファイルに書き込まれます。MacOS では <code>~/Library/Application Support/com.tauleap.tausql/main.duckdb</code> です。</li>
       <li><strong>履歴</strong> — インポート履歴と SQL 実行履歴。過去の作業を確認できます。</li>
       <li><strong>設定・接続情報</strong> — アプリの設定と、お客様が構成した接続の情報。</li>
+      <li><strong>ライセンス関連</strong> — 有効化に用いるライセンスキーおよびデバイス識別子は、MacOS のキーチェーンに保存されます。</li>
       <li><strong>エクスポートしたファイル</strong> — CSV / TSV / Parquet として出力したファイルは、お客様が指定した場所に保存されます。</li>
     </ul>
-    <p>これらのデータが TauLeap に送信されることはありません。アプリケーションのデータディレクトリを削除すれば、データも削除されます。なお、ホームディレクトリ配下のファイルは、Time Machine、ファイル履歴、クラウドバックアップなど、お客様ご自身が設定したバックアップの対象に含まれる場合があります。</p>
+    <p>取り込んだテーブル、クエリ、分析データが TauLeap に送信されることはありません。アプリケーションのデータディレクトリを削除すれば、ローカルのデータベースと履歴も削除されます。なお、ホームディレクトリ配下のファイルは、Time Machine、ファイル履歴、クラウドバックアップなど、お客様ご自身が設定したバックアップの対象に含まれる場合があります。</p>
+
+    <h2>3. 当社が受け取る情報</h2>
+    <p>TauSQL 自体に会員登録、ログイン、利用状況の追跡、クラッシュレポート送信、広告識別子はありません。第三者の解析 SDK も組み込んでいません。当社が情報を受け取るのは、次の場合に限ります。</p>
+    <ul>
+      <li><strong>購入およびサブスクリプション</strong> — 決済は Polar.sh（Merchant of Record）が処理します。メールアドレスと支払い情報は Polar に直接提供されます。当社は、ライセンスの発行およびサポートのため、メールアドレスと購入・サブスクリプションの記録（プラン、状態、関連識別子など）を受領します。クレジットカード番号の全桁を当社が閲覧・保存することはありません。Polar におけるデータの取り扱いは <a href="https://polar.sh/legal/privacy" rel="noopener noreferrer" target="_blank">Polar のプライバシーポリシー</a> に従います。</li>
+      <li><strong>自動更新（継続課金）</strong> — 月額・年額プランでは、Polar が支払い方法を保持し、Polar のカスタマーポータル等で解約されるまでサブスクリプションを自動更新します。更新のたびに、当社はライセンスを継続するために必要な購入・サブスクリプション状態を受け取ります。買い切りプランは一度きりの支払いで、自動更新されません。</li>
+      <li><strong>ライセンスの有効化・検証</strong> — ライセンスの有効化または検証の際、TauSQL はライセンスキーとデバイス識別子を Polar Customer Portal API へ送信します。デバイス識別子は初回利用時に生成されるランダムな値で、MacOS のキーチェーンに保存されます。ハードウェアのシリアル番号から導出されるものではなく、お客様個人を特定するものでもありません。これはライセンスあたりの利用台数制限（最大 2 台）のためだけに使用されます。</li>
+      <li><strong>サポートメール</strong> — メールでお問い合わせいただいた場合は、そのメールに含まれる情報（通常はメールアドレスとお問い合わせ内容）を受け取ります。これは返信のためだけに利用します。</li>
+    </ul>
 
     <h2>4. ネットワーク通信</h2>
-    <p>TauSQL はオフラインでの動作を前提に設計されています。ネットワーク通信が発生するのは次の場合のみです。</p>
+    <p>TauSQL は日常的な分析をオフラインで行えるよう設計されています。ネットワーク通信が発生するのは次の場合のみです。</p>
     <ul>
+      <li><strong>決済、ライセンスの有効化・検証</strong> — 上記のとおり、購入フローおよびライセンス確認は HTTPS 経由で Polar と通信します。</li>
+      <li><strong>アップデート確認</strong> — アプリから更新を確認する場合、TauSQL は GitHub Releases（またはそこにホストされた更新用メタデータ）へアクセスします。一般的なネットワーク通信と同様に、関係するサーバーが IP アドレスやアプリのバージョンを記録する場合があります。データベースの内容は含まれません。</li>
       <li><strong>お客様が設定したリモート接続</strong> — Quack や DuckLake などのリモートエンドポイントに接続した場合、実行したクエリと対象データがそのエンドポイントとの間で送受信されます。当該サービスはお客様が接続先として選んだ事業者が運営しており、その事業者の利用規約・プライバシーポリシーが適用されます。接続用の認証情報やアクセストークンは、平文ではなく OS のキーチェーンに保存され、当社のサーバーには保存されません。</li>
       <li><strong>DuckDB 拡張</strong> — TauSQL は DuckDB の拡張を読み込むことがあります。拡張がローカルに存在しない場合、DuckDB が公式の拡張リポジトリからダウンロードすることがあります。この通信は DuckDB 側のインフラに対して行われ、お客様のデータベース内の個人情報は含まれません。</li>
     </ul>
     <p>上記以外に、TauSQL がテーブル・クエリ・ファイル名・ファイル内容を外部へ送信することはありません。</p>
 
-    <h2>5. 第三者提供</h2>
-    <p>TauLeap は、CCPA/CPRA にいう個人情報の販売・共有を行わず、貸与もしません。クロスコンテキストの行動広告にも使いません。広告ネットワークやデータブローカーも利用していません。TauSQL に関連して情報を受け取り得る第三者は、お客様が意図的に接続したリモートデータサービスと、上記の DuckDB 拡張リポジトリに限られます。</p>
+    <h2>5. 利用目的</h2>
+    <p>本ポリシーに記載する個人データの管理者は TauLeap です。当社は、購入いただいたソフトウェアの提供、ライセンスの発行・検証および不正利用の防止、サブスクリプション更新後のライセンス継続、アップデートの提供、サポートへの対応のために、上記の限られたデータを取り扱います。プロファイリングや広告目的では利用しません。</p>
+    <p>GDPR または英国 GDPR が適用される場合の根拠は、次のとおりです。お客様との契約の履行（購入、ライセンス、更新、アップデート）、法令上の義務の遵守（会計・税務のための購入記録の保管）、およびサポートメールについては、お客様の求めに応じた対応、または問い合わせに答える正当な利益です。</p>
 
-    <h2>6. 本ウェブサイトについて</h2>
-    <p>本ページは GitHub, Inc. が運営する GitHub Pages 上で公開されています。GitHub は、セキュリティおよび運用上の目的で IP アドレスなど標準的なリクエスト情報を記録する場合があります。本ページのウェブフォントは Google Fonts から配信されます。本サイトでは解析ツール、Cookie、トラッキングピクセルのいずれも使用していません。</p>
+    <h2>6. 保存期間</h2>
+    <p>購入記録、サブスクリプション状態およびライセンス記録は、ライセンスまたはサブスクリプションが有効な期間、ならびにその後も会計・税務・法令上必要とされる期間、保管します。サポートに関するメールは、当該問い合わせおよびその後のやり取りに必要な期間、保管します。継続課金のための支払い方法は Polar が保持し、当社は保持しません。</p>
 
-    <h2>7. セキュリティ</h2>
-    <p>データはお客様の端末内に保持されるため、その安全性は主に端末自体の安全性に依存します。ディスク全体の暗号化と、OS を最新の状態に保つことを推奨します。リモート接続用に入力されたアクセストークンは、アプリ内に平文で保存されるのではなく OS のキーチェーンに委ねられます。</p>
+    <h2>7. 第三者提供</h2>
+    <p>TauLeap は、CCPA/CPRA にいう個人情報の販売・共有を行わず、貸与もしません。クロスコンテキストの行動広告にも使いません。広告ネットワークやデータブローカーも利用していません。</p>
+    <p>TauSQL に関連して情報を受け取り得る第三者は、Polar（決済・サブスクリプション・ライセンス有効化）、GitHub（アップデート配信および本サイト）、DuckDB 拡張リポジトリ、およびお客様が意図的に接続したリモートデータサービスです。各社は受領したデータについて、自社のプライバシーポリシーに従って行動します。これらの提供事業者の一部は、日本および EEA の域外（主に米国）に所在し、各社が定める保護措置のもとでデータを取り扱うことがあります。</p>
 
-    <h2>8. 子どもの利用について</h2>
+    <h2>8. 本ウェブサイトについて</h2>
+    <p>本ページは GitHub, Inc. が運営する GitHub Pages 上で公開されています。GitHub は、セキュリティおよび運用上の目的で IP アドレスなど標準的なリクエスト情報を記録する場合があります。本ページのウェブフォントは Google Fonts から配信されます。製品ページの購入リンクは Polar のチェックアウトへ遷移し、その決済画面は Polar が運営します。本サイトでは解析ツール、Cookie、トラッキングピクセルのいずれも使用していません。</p>
+
+    <h2>9. セキュリティ</h2>
+    <p>分析データはお客様の端末内に保持されるため、その安全性は主に端末自体の安全性に依存します。ディスク全体の暗号化と、OS を最新の状態に保つことを推奨します。ライセンスキー、デバイス識別子、リモート接続用のアクセストークンは、アプリ内に平文で保存されるのではなく OS のキーチェーンに委ねられます。Polar との通信は、暗号化された HTTPS 接続を使用します。</p>
+
+    <h2>10. 子どもの利用について</h2>
     <p>TauSQL は開発者・アナリスト向けの汎用ツールであり、子どもを対象としたものではありません。当社が子どもから情報を意図的に収集することはありません。</p>
 
-    <h2>9. お客様の権利</h2>
-    <p>当社は TauSQL の利用者に関する個人データを保有していないため、通常、開示・訂正・削除の対象となる情報はありません。メールでご連絡いただいた履歴の削除をご希望の場合は、<a class="js-email" href="#contact-email" data-u="support" data-d="tauleap.com">email</a> までご連絡ください。削除いたします。EEA または英国に居住されている場合、当該メールに対してアクセス、訂正、消去、処理の制限、ポータビリティ、異議申立て、および監督機関への苦情申立ての権利が適用されます。</p>
+    <h2>11. お客様の権利</h2>
+    <p>当社が保有する購入・サブスクリプション・ライセンスに関するデータの開示、訂正、削除をご請求いただけます。ただし、会計・税務上の義務を果たすため購入記録の保管が必要となる場合があること、およびライセンス記録を削除すると当該ライセンスが無効になることをご了承ください。サブスクリプションの請求情報・請求書・解約は、主に Polar 側で管理されます。ご請求は <a class="js-email" href="#contact-email" data-u="support" data-d="tauleap.com">email</a> までご連絡ください。</p>
+    <p>EEA または英国に居住されている場合は、さらに、個人データへのアクセス、訂正、消去、処理の制限、異議申立て、ポータブルな形式での写しの受領、および所在地の監督機関への苦情申立ての権利があります。窓口は上記と同じです。これらの権利は、上記の購入記録の保管を含む、適用法の制限に服します。</p>
 
-    <h2>10. 本ポリシーの変更</h2>
+    <h2>12. 本ポリシーの変更</h2>
     <p>TauSQL のデータの取り扱いを変更する場合は、本ページを更新し、上部の「Last updated」を改訂します。重要な変更については、効力発生前または発生時点で本ページに反映します。</p>
 
-    <h2>11. お問い合わせ</h2>
+    <h2>13. お問い合わせ</h2>
     <p>TauLeap — <a class="js-email" href="#contact-email" data-u="support" data-d="tauleap.com">email</a></p>
 
     <p class="note">This document is provided in English and Japanese. If the two versions differ, the Japanese version prevails.<br>本文書は英語と日本語で提供されます。両者に相違がある場合は日本語版が優先します。</p>

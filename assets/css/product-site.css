@@ -276,6 +276,17 @@ a:hover { text-decoration: underline; }
 .hero-notes li::before { content: "✓"; margin-right: 0.35rem; color: var(--accent); }
 
 .hero-demo { position: relative; min-width: 0; }
+.hero-shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2134 / 1426;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
 .app-window {
   overflow: hidden;
   border: 1px solid var(--line);
@@ -765,6 +776,13 @@ main > section:not(.hero) {
 .price-foot { margin: 1.2rem auto 0; max-width: 40rem; color: var(--muted); font-size: 0.85rem; text-align: center; }
 @media (max-width: 720px) { .price-grid { grid-template-columns: 1fr; } }
 
+#demo,
+#features,
+#pricing,
+#faq {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .video-embed {
   position: relative;
   max-width: 56rem;
@@ -822,6 +840,10 @@ main > section:not(.hero) {
   .hero { min-height: 0; padding: 2.25rem 1rem 2.5rem; }
   .hero-cta { flex-direction: column; align-items: stretch; }
   main > section:not(.hero) { padding: 3.5rem 1rem; }
+  #demo,
+  #features,
+  #pricing,
+  #faq { padding-top: 2rem; padding-bottom: 2rem; }
   .sql-body { grid-template-columns: 1fr; }
   .sql-side { display: none; }
   .diff-mock { grid-template-columns: 1fr; height: auto; }

@@ -1,15 +1,17 @@
-# tau-leap.github.io
+# tauleap.com
 
-TauLeap product hub and legal documents — https://tau-leap.github.io/
+TauLeap product hub and legal documents — https://tauleap.com/
+
+ソースは [tau-leap.github.io](https://github.com/tau-leap/tau-leap.github.io) で管理しています。
 
 ## Desktop apps
 
 | Product | Website | GitHub | Terms | Privacy |
 | --- | --- | --- | --- | --- |
-| TauBar | [site](https://tau-leap.github.io/product/taubar/) | [repo](https://github.com/tau-leap/taubar) | [terms-of-service](https://tau-leap.github.io/product/taubar/terms-of-service.html) | [privacy-policy](https://tau-leap.github.io/product/taubar/privacy-policy.html) |
-| TauSQL | [site](https://tau-leap.github.io/product/tausql/) | [repo](https://github.com/tau-leap/tausql) | [terms-of-service](https://tau-leap.github.io/product/tausql/terms-of-service.html) | [privacy-policy](https://tau-leap.github.io/product/tausql/privacy-policy.html) |
-| TauPad | [site](https://tau-leap.github.io/product/taupad/) | [repo](https://github.com/tau-leap/taupad) | [terms-of-service](https://tau-leap.github.io/product/taupad/terms-of-service.html) | [privacy-policy](https://tau-leap.github.io/product/taupad/privacy-policy.html) |
-| TauDiff | [site](https://tau-leap.github.io/product/taudiff/) | [repo](https://github.com/tau-leap/taudiff) | [terms-of-service](https://tau-leap.github.io/product/taudiff/terms-of-service.html) | [privacy-policy](https://tau-leap.github.io/product/taudiff/privacy-policy.html) |
+| TauBar | [site](https://tauleap.com/product/taubar/) | [repo](https://github.com/tau-leap/taubar) | [terms-of-service](https://tauleap.com/product/taubar/terms-of-service.html) | [privacy-policy](https://tauleap.com/product/taubar/privacy-policy.html) |
+| TauSQL | [site](https://tauleap.com/product/tausql/) | [repo](https://github.com/tau-leap/tausql) | [terms-of-service](https://tauleap.com/product/tausql/terms-of-service.html) | [privacy-policy](https://tauleap.com/product/tausql/privacy-policy.html) |
+| TauPad | [site](https://tauleap.com/product/taupad/) | [repo](https://github.com/tau-leap/taupad) | [terms-of-service](https://tauleap.com/product/taupad/terms-of-service.html) | [privacy-policy](https://tauleap.com/product/taupad/privacy-policy.html) |
+| TauDiff | [site](https://tauleap.com/product/taudiff/) | [repo](https://github.com/tau-leap/taudiff) | [terms-of-service](https://tauleap.com/product/taudiff/terms-of-service.html) | [privacy-policy](https://tauleap.com/product/taudiff/privacy-policy.html) |
 
 Each legal document contains an English section followed by a Japanese section on the same page.
 
@@ -19,4 +21,4 @@ Each legal document contains an English section followed by a Japanese section o
 | --- | --- | --- | --- |
 | TauMemo | [Chrome Web Store](https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj) | | |
 | GitHub Translate | [Chrome Web Store](https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm) | [repo](https://github.com/tau-leap/github-translate) | [feedback](https://github.com/tau-leap/github-translate/issues/new/choose) |
-| Pin Guard | [Chrome Web Store](https://chromewebstore.google.com/detail/pin-guard/hjgldkodbpkdgegobbaafhjkhgeinfac) | | | 
+| Pin Guard | [Chrome Web Store](https://chromewebstore.google.com/detail/pin-guard/hjgldkodbpkdgegobbaafhjkhgeinfac) | | |

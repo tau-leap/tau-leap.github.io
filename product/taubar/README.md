@@ -2,7 +2,7 @@
 
 Static landing page for TauBar.
 本番 URL: [tauleap.com/product/taubar](https://tauleap.com/product/taubar/)
-（ソースは [tau-leap.github.io/product/taubar](https://tau-leap.github.io/product/taubar/)）
+（ソースは [tau-leap.github.io/product/taubar](https://github.com/tau-leap/tau-leap.github.io/tree/main/product/taubar)）
 
 ## Local preview
 
@@ -19,22 +19,14 @@ ES modules require a local server (not `file://`).
 This directory is part of the `tau-leap.github.io` GitHub Pages site.
 Push changes to that repository to publish.
 
-Place release artifacts at:
-
-- `/product/taubar/downloads/TauBar.dmg`（LP 用の手動ダウンロード）
-
-Sparkle の更新フィードは GitHub Releases の latest を使う:
+ダウンロードと Sparkle 更新フィードは GitHub Releases の latest を使います。
 
 `https://github.com/tau-leap/taubar/releases/latest/download/appcast.xml`
-
-（このディレクトリの `appcast.xml` はレガシー。本番アプリは Releases 側を参照）
 
 ## Polar Checkout
 
 Buy ボタンは Polar Checkout の直リンクへ遷移します。
-本番デプロイ前に、ページ先頭で URL を設定してください。
-
-既定値は `js/main.js` の Checkout Link（3プラン共通）です。
+既定の Checkout Link は `js/main.js` に設定済みです。
 プラン別にプリセレクトする場合は Product ID を付けます。
 
 ```text
@@ -52,8 +44,6 @@ window.TAUBAR_POLAR_CHECKOUT = {
 };
 </script>
 ```
-
-未設定のときは購入ボタンで案内アラートを出します。
 
 ## Plans (LP copy)
 

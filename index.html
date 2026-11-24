@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -10,179 +9,278 @@
 <link rel="icon" href="assets/favicon.png" type="image/png" sizes="192x192">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link href="assets/css/home.css" rel="stylesheet"/>
 </head>
 <body class="home">
 <header class="site-header">
-<div class="shell">
-<a class="mark" href="/"><span class="glyph">τ</span>TauLeap</a>
-<nav aria-label="Main">
-<a class="is-active" href="#apps">Apps</a>
-<a href="about/">About</a>
-<a href="#contact">Contact</a>
-<span aria-hidden="true" class="header-sep"></span>
-<a href="https://github.com/tau-leap" rel="noopener noreferrer" target="_blank">GitHub</a>
-<a class="nav-support" href="https://buy.polar.sh/polar_cl_QaRp7E5ZmUJIgkGfaY303D8nl0AAl69xjlJYS14sHu1" target="_blank" rel="noopener noreferrer" aria-label="Support TauLeap work">
-<svg class="nav-support-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-<path fill="currentColor" d="M4.5 5.25A.75.75 0 0 1 5.25 4.5h11.5a.75.75 0 0 1 .75.75V7h1.25A2.75 2.75 0 0 1 21.5 9.75v.5A3.75 3.75 0 0 1 17.75 14H17.5v1.1A4.4 4.4 0 0 1 13.1 19.5H8.9A4.4 4.4 0 0 1 4.5 15.1V5.25Zm13 6.5h.25a2.25 2.25 0 0 0 2.25-2.25v-.5a1.25 1.25 0 0 0-1.25-1.25H17.5v4Zm-11.5-5.5v8.85A2.9 2.9 0 0 0 8.9 18h4.2A2.9 2.9 0 0 0 16 15.1V6.25H6Z"/>
-</svg>
-<span class="nav-support-label">Support</span>
-</a>
-</nav>
-</div>
+  <div class="shell">
+    <a class="mark" href="/"><span class="glyph" aria-hidden="true">τ</span><span>TauLeap</span></a>
+    <nav aria-label="Main">
+      <a class="is-active" href="#apps">Apps</a>
+      <a href="about/">About</a>
+      <a href="#contact">Contact</a>
+      <span aria-hidden="true" class="header-sep"></span>
+      <a href="https://github.com/tau-leap" rel="noopener noreferrer" target="_blank">GitHub</a>
+      <a class="nav-support" href="https://buy.polar.sh/polar_cl_QaRp7E5ZmUJIgkGfaY303D8nl0AAl69xjlJYS14sHu1" target="_blank" rel="noopener noreferrer" aria-label="Support TauLeap work">
+        <svg class="nav-support-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M4.5 5.25A.75.75 0 0 1 5.25 4.5h11.5a.75.75 0 0 1 .75.75V7h1.25A2.75 2.75 0 0 1 21.5 9.75v.5A3.75 3.75 0 0 1 17.75 14H17.5v1.1A4.4 4.4 0 0 1 13.1 19.5H8.9A4.4 4.4 0 0 1 4.5 15.1V5.25Zm13 6.5h.25a2.25 2.25 0 0 0 2.25-2.25v-.5a1.25 1.25 0 0 0-1.25-1.25H17.5v4Zm-11.5-5.5v8.85A2.9 2.9 0 0 0 8.9 18h4.2A2.9 2.9 0 0 0 16 15.1V6.25H6Z"/>
+        </svg>
+        <span class="nav-support-label">Support</span>
+      </a>
+    </nav>
+  </div>
 </header>
+
 <main>
-<section class="hero">
-<div aria-hidden="true" class="hero-glow"></div>
-<div class="shell">
-<h1 class="hero-name">TauLeap</h1>
-<p class="hero-tag">Mac apps and Chrome extensions</p>
-<p class="hero-tag-ja">軽量で安全なツールをつくっています</p>
-<div class="hero-actions">
-</div>
-</div>
-</section>
-<section class="band" id="apps">
-<div class="shell">
+  <section class="hero">
+    <div aria-hidden="true" class="hero-glow"></div>
+    <div class="shell">
+      <div class="hero-frame" data-reveal>
+        <div aria-hidden="true" class="hero-blueprint">τ</div>
+        <div class="hero-eyebrow">
+          <span class="hero-dot" aria-hidden="true"></span>
+          <span>Local-first utilities · macOS &amp; Chrome</span>
+        </div>
+        <h1 class="hero-name">Tau<span class="accent-tau">Leap</span></h1>
+        <div class="hero-lead-group">
+          <p class="hero-tag">Mac apps and Chrome extensions</p>
+          <p class="hero-tag-ja">軽量で安全なツールをつくっています</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#apps">
+            <span>Explore Apps</span>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M10 4v12"/>
+              <path d="m5.5 11.5 4.5 4.5 4.5-4.5"/>
+            </svg>
+          </a>
+          <a class="btn btn-ghost" href="about/">About TauLeap</a>
+        </div>
+        <div class="hero-specs">
+          <div class="hero-spec">
+            <span class="hero-spec-label">01 / Local-only</span>
+            <span class="hero-spec-value">Runs on your machine without sending data elsewhere</span>
+          </div>
+          <div class="hero-spec">
+            <span class="hero-spec-label">02 / Lightweight</span>
+            <span class="hero-spec-value">Small, fast tools crafted for daily developer friction</span>
+          </div>
+          <div class="hero-spec">
+            <span class="hero-spec-label">03 / Lineup</span>
+            <span class="hero-spec-value">4 Mac apps · 3 Chrome extensions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="platform-group" id="mac-apps">
-<div class="platform-heading">
-<svg class="platform-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="3" y="4" width="18" height="12" rx="1.5"/>
-  <path d="M8 20h8"/>
-  <path d="M12 16v4"/>
-</svg>
-<div class="platform-heading-text">
-<h2>Mac apps</h2>
-<p class="platform-heading-ja">Mac アプリ</p>
-</div>
-</div>
-<div class="app-grid">
-<a class="app-card" href="product/taubar/" target="_blank" rel="noopener noreferrer">
-<img alt="" class="app-icon" height="56" src="product/taubar/assets/icon.png" width="56"/>
-<div class="app-card-body">
-<h3 class="app-card-title">TauBar</h3>
-<p class="app-card-desc">Gives your Mac a Windows-style taskbar. Work with each window on its own, with Chrome profile icons shown.</p>
-<p class="app-card-desc-ja">Mac を Windows 風のタスクバーで操作可能にします。ウィンドウ単位で操作できます。Chrome のプロファイルアイコンも表示します。</p>
-<div class="app-card-meta">
-<span class="badge">macOS 26+ · Apple Silicon</span>
-</div>
-</div>
-</a>
-<a class="app-card" href="product/tausql/" target="_blank" rel="noopener noreferrer">
-<img alt="" class="app-icon" height="56" src="product/tausql/assets/icon.png" width="56"/>
-<div class="app-card-body">
-<h3 class="app-card-title">TauSQL</h3>
-<p class="app-card-desc">Loads local CSV, TSV, and Parquet into DuckDB so you can query them with SQL.</p>
-<p class="app-card-desc-ja">ローカルの CSV / TSV / Parquet を DuckDB に読み込み、SQL でクエリできます。</p>
-<div class="app-card-meta">
-<span class="badge">macOS</span>
-</div>
-</div>
-</a>
-<a class="app-card" href="product/taupad/" target="_blank" rel="noopener noreferrer">
-<img alt="" class="app-icon" height="56" src="product/taupad/assets/icon.png" width="56"/>
-<div class="app-card-body">
-<h3 class="app-card-title">TauPad</h3>
-<p class="app-card-desc">Opens text files quickly in a light editor with tabs, encoding, and line endings.</p>
-<p class="app-card-desc-ja">テキストファイルをすばやく開き、タブや文字コード、改行コードを扱えます。</p>
-<div class="app-card-meta">
-<span class="badge">macOS 10.15+ · Apple Silicon</span>
-<span class="badge">Free</span>
-</div>
-</div>
-</a>
-<a class="app-card" href="product/taudiff/" target="_blank" rel="noopener noreferrer">
-<img alt="" class="app-icon" height="56" src="product/taudiff/assets/icon.png" width="56"/>
-<div class="app-card-body">
-<h3 class="app-card-title">TauDiff</h3>
-<p class="app-card-desc">Compares two text files side by side so you can edit either pane and save.</p>
-<p class="app-card-desc-ja">テキストファイルを左右で比較し、そのまま編集・保存できます。</p>
-<div class="app-card-meta">
-<span class="badge">macOS 10.15+ · Apple Silicon</span>
-<span class="badge">Free</span>
-</div>
-</div>
-</a>
-</div>
-</div>
+  <section class="band" id="apps">
+    <div class="shell">
 
-<div class="platform-group" id="chrome-extensions">
-<div class="platform-heading">
-<svg class="platform-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="3" y="4" width="18" height="16" rx="2"/>
-  <path d="M3 8h18"/>
-  <circle cx="6.5" cy="6" r="0.6" fill="currentColor" stroke="none"/>
-  <circle cx="9" cy="6" r="0.6" fill="currentColor" stroke="none"/>
-  <path d="M10 13.5h2.2a1.3 1.3 0 1 0 0-2.6H10v-1.3a1.3 1.3 0 1 0-2.6 0V11H6.1a1.3 1.3 0 1 0 0 2.6H7.4v1.3a1.3 1.3 0 1 0 2.6 0v-1.4Z"/>
-</svg>
-<div class="platform-heading-text">
-<h2>Chrome extensions</h2>
-<p class="platform-heading-ja">Chrome 拡張</p>
-</div>
-</div>
-<div class="app-grid">
-<a class="app-card" href="https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm" rel="noopener noreferrer" target="_blank">
-<img alt="" class="app-icon" height="56" src="assets/product-icons/github-translate.png" width="56"/>
-<div class="app-card-body">
-<h3 class="app-card-title">GitHub Translate</h3>
-<p class="app-card-desc">Puts short Japanese labels beside github.com menus, tabs, and buttons.</p>
-<p class="app-card-desc-ja">github.com のメニューやタブの横に、短い日本語を並記します。</p>
-<div class="app-card-meta">
-<span class="badge">Free</span>
-</div>
-</div>
-</a>
-<a class="app-card" href="https://chromewebstore.google.com/detail/pin-guard/hjgldkodbpkdgegobbaafhjkhgeinfac" rel="noopener noreferrer" target="_blank">
-<img alt="" class="app-icon" height="56" src="assets/product-icons/pin-guard.png" width="56"/>
-<div class="app-card-body">
-<h3 class="app-card-title">Pin Guard</h3>
-<p class="app-card-desc">Keeps Chrome pinned tabs from showing another site.</p>
-<p class="app-card-desc-ja">Chromeの固定タブが別サイトを表示しないようにピン留めします。</p>
-<div class="app-card-meta">
-<span class="badge">Free</span>
-</div>
-</div>
-</a>
-<a class="app-card" href="https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj" rel="noopener noreferrer" target="_blank">
-<img alt="" class="app-icon" height="56" src="assets/product-icons/taumemo.png" width="56"/>
-<div class="app-card-body">
-<h3 class="app-card-title">TauMemo</h3>
-<p class="app-card-desc">Opens a Chrome Side Panel memo that auto-saves on your device.</p>
-<p class="app-card-desc-ja">Chrome のサイドパネルでメモを取り、端末内に自動保存します。</p>
-<div class="app-card-meta">
-<span class="badge">Free</span>
-</div>
-</div>
-</a>
-</div>
-</div>
+      <div class="platform-group" id="mac-apps">
+        <div class="platform-heading" data-reveal>
+          <span class="platform-index" aria-hidden="true">01</span>
+          <svg class="platform-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="12" rx="1.5"/>
+            <path d="M8 20h8"/>
+            <path d="M12 16v4"/>
+          </svg>
+          <div class="platform-heading-text">
+            <h2>Mac apps</h2>
+            <p class="platform-heading-ja">Mac アプリ</p>
+          </div>
+          <span class="platform-rule" aria-hidden="true"></span>
+          <span class="platform-count">4 tools</span>
+        </div>
 
-</div>
-</section>
-<section class="contact" id="contact">
-<div class="shell">
-<h2>Contact</h2>
-<p>Product, licence, or data questions go to one address.</p>
-<p>プロダクト・ライセンス・データの問い合わせはこちら。</p>
-<a class="mail js-email" data-d="tauleap.com" data-u="support" href="#contact-email">email</a>
-</div>
-</section>
+        <div class="app-grid">
+          <a class="app-card" data-accent="taubar" data-reveal href="product/taubar/" target="_blank" rel="noopener noreferrer">
+            <div class="app-icon-wrap">
+              <img alt="" class="app-icon" height="58" src="product/taubar/assets/icon.png" width="58"/>
+            </div>
+            <div class="app-card-body">
+              <div class="app-card-head">
+                <h3 class="app-card-title">TauBar</h3>
+                <span class="app-card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="app-card-desc">Gives your Mac a Windows-style taskbar. Work with each window on its own, with Chrome profile icons shown.</p>
+              <p class="app-card-desc-ja">Mac を Windows 風のタスクバーで操作可能にします。ウィンドウ単位で操作できます。Chrome のプロファイルアイコンも表示します。</p>
+              <div class="app-card-meta">
+                <span class="badge">macOS 26+ · Apple Silicon</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="app-card" data-accent="tausql" data-reveal href="product/tausql/" target="_blank" rel="noopener noreferrer">
+            <div class="app-icon-wrap">
+              <img alt="" class="app-icon" height="58" src="product/tausql/assets/icon.png" width="58"/>
+            </div>
+            <div class="app-card-body">
+              <div class="app-card-head">
+                <h3 class="app-card-title">TauSQL</h3>
+                <span class="app-card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="app-card-desc">Loads local CSV, TSV, and Parquet into DuckDB so you can query them with SQL.</p>
+              <p class="app-card-desc-ja">ローカルの CSV / TSV / Parquet を DuckDB に読み込み、SQL でクエリできます。</p>
+              <div class="app-card-meta">
+                <span class="badge">macOS</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="app-card" data-accent="taupad" data-reveal href="product/taupad/" target="_blank" rel="noopener noreferrer">
+            <div class="app-icon-wrap">
+              <img alt="" class="app-icon" height="58" src="product/taupad/assets/icon.png" width="58"/>
+            </div>
+            <div class="app-card-body">
+              <div class="app-card-head">
+                <h3 class="app-card-title">TauPad</h3>
+                <span class="app-card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="app-card-desc">Opens text files quickly in a light editor with tabs, encoding, and line endings.</p>
+              <p class="app-card-desc-ja">テキストファイルをすばやく開き、タブや文字コード、改行コードを扱えます。</p>
+              <div class="app-card-meta">
+                <span class="badge">macOS 10.15+ · Apple Silicon</span>
+                <span class="badge badge-free">Free</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="app-card" data-accent="taudiff" data-reveal href="product/taudiff/" target="_blank" rel="noopener noreferrer">
+            <div class="app-icon-wrap">
+              <img alt="" class="app-icon" height="58" src="product/taudiff/assets/icon.png" width="58"/>
+            </div>
+            <div class="app-card-body">
+              <div class="app-card-head">
+                <h3 class="app-card-title">TauDiff</h3>
+                <span class="app-card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="app-card-desc">Compares two text files side by side so you can edit either pane and save.</p>
+              <p class="app-card-desc-ja">テキストファイルを左右で比較し、そのまま編集・保存できます。</p>
+              <div class="app-card-meta">
+                <span class="badge">macOS 10.15+ · Apple Silicon</span>
+                <span class="badge badge-free">Free</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="platform-group" id="chrome-extensions">
+        <div class="platform-heading" data-reveal>
+          <span class="platform-index" aria-hidden="true">02</span>
+          <svg class="platform-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="16" rx="2"/>
+            <path d="M3 8h18"/>
+            <circle cx="6.5" cy="6" r="0.6" fill="currentColor" stroke="none"/>
+            <circle cx="9" cy="6" r="0.6" fill="currentColor" stroke="none"/>
+            <path d="M10 13.5h2.2a1.3 1.3 0 1 0 0-2.6H10v-1.3a1.3 1.3 0 1 0-2.6 0V11H6.1a1.3 1.3 0 1 0 0 2.6H7.4v1.3a1.3 1.3 0 1 0 2.6 0v-1.4Z"/>
+          </svg>
+          <div class="platform-heading-text">
+            <h2>Chrome extensions</h2>
+            <p class="platform-heading-ja">Chrome 拡張</p>
+          </div>
+          <span class="platform-rule" aria-hidden="true"></span>
+          <span class="platform-count">3 extensions</span>
+        </div>
+
+        <div class="app-grid">
+          <a class="app-card" data-accent="ext" data-reveal href="https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm" rel="noopener noreferrer" target="_blank">
+            <div class="app-icon-wrap">
+              <img alt="" class="app-icon" height="58" src="assets/product-icons/github-translate.png" width="58"/>
+            </div>
+            <div class="app-card-body">
+              <div class="app-card-head">
+                <h3 class="app-card-title">GitHub Translate</h3>
+                <span class="app-card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="app-card-desc">Puts short Japanese labels beside github.com menus, tabs, and buttons.</p>
+              <p class="app-card-desc-ja">github.com のメニューやタブの横に、短い日本語を並記します。</p>
+              <div class="app-card-meta">
+                <span class="badge">Chrome Web Store</span>
+                <span class="badge badge-free">Free</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="app-card" data-accent="ext" data-reveal href="https://chromewebstore.google.com/detail/pin-guard/hjgldkodbpkdgegobbaafhjkhgeinfac" rel="noopener noreferrer" target="_blank">
+            <div class="app-icon-wrap">
+              <img alt="" class="app-icon" height="58" src="assets/product-icons/pin-guard.png" width="58"/>
+            </div>
+            <div class="app-card-body">
+              <div class="app-card-head">
+                <h3 class="app-card-title">Pin Guard</h3>
+                <span class="app-card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="app-card-desc">Keeps Chrome pinned tabs from showing another site.</p>
+              <p class="app-card-desc-ja">Chromeの固定タブが別サイトを表示しないようにピン留めします。</p>
+              <div class="app-card-meta">
+                <span class="badge">Chrome Web Store</span>
+                <span class="badge badge-free">Free</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="app-card" data-accent="ext" data-reveal href="https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj" rel="noopener noreferrer" target="_blank">
+            <div class="app-icon-wrap">
+              <img alt="" class="app-icon" height="58" src="assets/product-icons/taumemo.png" width="58"/>
+            </div>
+            <div class="app-card-body">
+              <div class="app-card-head">
+                <h3 class="app-card-title">TauMemo</h3>
+                <span class="app-card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="app-card-desc">Opens a Chrome Side Panel memo that auto-saves on your device.</p>
+              <p class="app-card-desc-ja">Chrome のサイドパネルでメモを取り、端末内に自動保存します。</p>
+              <div class="app-card-meta">
+                <span class="badge">Chrome Web Store</span>
+                <span class="badge badge-free">Free</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="shell">
+      <div class="contact-card" data-reveal>
+        <div class="contact-copy">
+          <p class="contact-eyebrow">// Contact</p>
+          <h2>Get in touch</h2>
+          <p>Product, licence, or data questions go to one address.</p>
+          <p class="ja">プロダクト・ライセンス・データの問い合わせはこちら。</p>
+        </div>
+        <div class="contact-action">
+          <a class="mail-chip js-email" data-d="tauleap.com" data-u="support" href="#contact-email">email</a>
+          <button class="copy-btn js-copy-email" type="button" data-d="tauleap.com" data-u="support" aria-label="Copy contact email address">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+
 <footer class="site-foot">
-<div class="shell">
-<div class="foot-main">
-<span>© 2026 TauLeap</span>
-<span>TauBar · TauSQL · TauPad · TauDiff · GitHub Translate · Pin Guard · TauMemo</span>
-</div>
-<a aria-label="Support TauLeap work" class="support-link" href="https://buy.polar.sh/polar_cl_QaRp7E5ZmUJIgkGfaY303D8nl0AAl69xjlJYS14sHu1" rel="noopener noreferrer" target="_blank">
-<svg aria-hidden="true" class="support-icon" focusable="false" viewbox="0 0 24 24">
-<path d="M4.5 5.25A.75.75 0 0 1 5.25 4.5h11.5a.75.75 0 0 1 .75.75V7h1.25A2.75 2.75 0 0 1 21.5 9.75v.5A3.75 3.75 0 0 1 17.75 14H17.5v1.1A4.4 4.4 0 0 1 13.1 19.5H8.9A4.4 4.4 0 0 1 4.5 15.1V5.25Zm13 6.5h.25a2.25 2.25 0 0 0 2.25-2.25v-.5a1.25 1.25 0 0 0-1.25-1.25H17.5v4Zm-11.5-5.5v8.85A2.9 2.9 0 0 0 8.9 18h4.2A2.9 2.9 0 0 0 16 15.1V6.25H6Z" fill="currentColor"></path>
-</svg>
-<span>Support</span>
-</a>
-</div>
+  <div class="shell">
+    <div class="foot-main">
+      <span class="foot-copy">© 2026 TauLeap</span>
+      <span class="foot-list">TauBar · TauSQL · TauPad · TauDiff · GitHub Translate · Pin Guard · TauMemo</span>
+    </div>
+    <a aria-label="Support TauLeap work" class="support-link" href="https://buy.polar.sh/polar_cl_QaRp7E5ZmUJIgkGfaY303D8nl0AAl69xjlJYS14sHu1" rel="noopener noreferrer" target="_blank">
+      <svg aria-hidden="true" class="support-icon" focusable="false" viewBox="0 0 24 24">
+        <path d="M4.5 5.25A.75.75 0 0 1 5.25 4.5h11.5a.75.75 0 0 1 .75.75V7h1.25A2.75 2.75 0 0 1 21.5 9.75v.5A3.75 3.75 0 0 1 17.75 14H17.5v1.1A4.4 4.4 0 0 1 13.1 19.5H8.9A4.4 4.4 0 0 1 4.5 15.1V5.25Zm13 6.5h.25a2.25 2.25 0 0 0 2.25-2.25v-.5a1.25 1.25 0 0 0-1.25-1.25H17.5v4Zm-11.5-5.5v8.85A2.9 2.9 0 0 0 8.9 18h4.2A2.9 2.9 0 0 0 16 15.1V6.25H6Z" fill="currentColor"></path>
+      </svg>
+      <span>Support</span>
+    </a>
+  </div>
 </footer>
+
 <script src="assets/js/contact.js"></script>
+<script src="assets/js/home.js"></script>
 </body>
 </html>

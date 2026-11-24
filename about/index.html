@@ -9,13 +9,16 @@
 <link rel="icon" href="../assets/favicon.png" type="image/png" sizes="192x192">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/home.css">
 </head>
 <body class="home">
 
 <header class="site-header">
   <div class="shell">
-    <a class="mark" href="../"><span class="glyph">&tau;</span>TauLeap</a>
+    <a class="mark" href="../"><span class="glyph" aria-hidden="true">&tau;</span><span>TauLeap</span></a>
     <nav aria-label="Main">
       <a href="../#apps">Apps</a>
       <a class="is-active" href="./">About</a>
@@ -23,10 +26,10 @@
       <span class="header-sep" aria-hidden="true"></span>
       <a href="https://github.com/tau-leap" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a class="nav-support" href="https://buy.polar.sh/polar_cl_QaRp7E5ZmUJIgkGfaY303D8nl0AAl69xjlJYS14sHu1" target="_blank" rel="noopener noreferrer" aria-label="Support TauLeap work">
-<svg class="nav-support-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-<path fill="currentColor" d="M4.5 5.25A.75.75 0 0 1 5.25 4.5h11.5a.75.75 0 0 1 .75.75V7h1.25A2.75 2.75 0 0 1 21.5 9.75v.5A3.75 3.75 0 0 1 17.75 14H17.5v1.1A4.4 4.4 0 0 1 13.1 19.5H8.9A4.4 4.4 0 0 1 4.5 15.1V5.25Zm13 6.5h.25a2.25 2.25 0 0 0 2.25-2.25v-.5a1.25 1.25 0 0 0-1.25-1.25H17.5v4Zm-11.5-5.5v8.85A2.9 2.9 0 0 0 8.9 18h4.2A2.9 2.9 0 0 0 16 15.1V6.25H6Z"/>
-</svg>
-<span class="nav-support-label">Support</span>
+        <svg class="nav-support-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M4.5 5.25A.75.75 0 0 1 5.25 4.5h11.5a.75.75 0 0 1 .75.75V7h1.25A2.75 2.75 0 0 1 21.5 9.75v.5A3.75 3.75 0 0 1 17.75 14H17.5v1.1A4.4 4.4 0 0 1 13.1 19.5H8.9A4.4 4.4 0 0 1 4.5 15.1V5.25Zm13 6.5h.25a2.25 2.25 0 0 0 2.25-2.25v-.5a1.25 1.25 0 0 0-1.25-1.25H17.5v4Zm-11.5-5.5v8.85A2.9 2.9 0 0 0 8.9 18h4.2A2.9 2.9 0 0 0 16 15.1V6.25H6Z"/>
+        </svg>
+        <span class="nav-support-label">Support</span>
       </a>
     </nav>
   </div>
@@ -36,7 +39,11 @@
 
   <section class="about-hero">
     <div class="hero-glow" aria-hidden="true"></div>
-    <div class="shell">
+    <div class="shell" data-reveal>
+      <div class="hero-eyebrow">
+        <span class="hero-dot" aria-hidden="true"></span>
+        <span>Profile · Philosophy</span>
+      </div>
       <h1>About</h1>
       <p class="lede">Small, lightweight tools that run on your machine and are safe to use.</p>
       <p class="lede-ja">軽量で安全なツールをつくっています。</p>
@@ -46,17 +53,16 @@
   <section class="about-prose">
     <div class="shell">
 
-      <div class="about-block">
-        <h2>Who</h2>
+      <div class="about-block" data-reveal>
+        <h2>01 / Who</h2>
         <p>TauLeap is a personal project. It builds small, fast tools for developers and data engineers. Right now that means desktop apps and Chrome extensions.</p>
         <p class="ja">TauLeap は個人プロジェクトです。<br>
-          
           開発者やデータエンジニア向けに、小さくて速いツールをつくっています。<br>
           いまはデスクトップアプリと Chrome 拡張が中心です。</p>
       </div>
 
-      <div class="about-block">
-        <h2>Why</h2>
+      <div class="about-block" data-reveal>
+        <h2>02 / Why</h2>
         <p>TauLeap exists to build the tools I wanted.<br>
           After moving from Windows to Mac, small daily frictions piled up.<br>
           Window switching. English labels on GitHub. A pinned tab wandering off its domain.<br>
@@ -67,8 +73,8 @@
           軽量なツールであること、データを外部に送信しないこと、安心して使ってもらえるツールを作ることを、大切にしています。</p>
       </div>
 
-      <div class="about-block" id="contact">
-        <h2>Contact</h2>
+      <div class="about-block" id="contact" data-reveal>
+        <h2>03 / Contact</h2>
         <p>Questions go to one address.</p>
         <p class="ja">問い合わせはこちら。</p>
         <p><a class="mail js-email" href="#contact-email" data-u="support" data-d="tauleap.com">email</a></p>
@@ -83,12 +89,13 @@
 <footer class="site-foot">
   <div class="shell">
     <div class="foot-main">
-      <span>&copy; 2026 TauLeap</span>
+      <span class="foot-copy">&copy; 2026 TauLeap</span>
       <span><a href="../">Home</a> · <a href="../#apps">Apps</a></span>
     </div>
   </div>
 </footer>
 
 <script src="../assets/js/contact.js"></script>
+<script src="../assets/js/home.js"></script>
 </body>
 </html>

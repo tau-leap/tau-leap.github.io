@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TauSQL — Local SQL for CSV, TSV and Parquet</title>
-  <meta name="description" content="Load local CSV, TSV and Parquet into DuckDB and query them with SQL. No server, no sign-in.">
+  <title>TauSQL — Local SQL for CSV, TSV, Parquet and JSON</title>
+  <meta name="description" content="Load local CSV, TSV, Parquet, JSON and NDJSON into DuckDB and query them with SQL. No server, no sign-in.">
   <link rel="canonical" href="https://tauleap.com/product/tausql/">
   <link rel="icon" href="assets/icon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +50,7 @@
           <p class="eyebrow"><span></span><span data-i18n="hero.eyebrow">Local-first SQL, powered by DuckDB</span></p>
           <h1 data-i18n="hero.title">Analyze your files with SQL.
 Import with the mouse and analyze easily.</h1>
-          <p class="lead" data-i18n="hero.lead">Import CSV, TSV and Parquet into DuckDB in TauSQL,
+          <p class="lead" data-i18n="hero.lead">Import CSV, TSV, Parquet, JSON and NDJSON — including gzip — into DuckDB in TauSQL,
 and analyze them fast with SQL.</p>
           <div class="hero-cta">
             <a class="btn btn-primary btn-lg" href="https://github.com/tau-leap/tausql/releases/latest" target="_blank" rel="noopener noreferrer" data-i18n="cta.download">Download</a>
@@ -105,12 +105,12 @@ and analyze them fast with SQL.</p>
       <div class="feature-grid">
         <article class="feature-card span-2">
           <ol class="cap-list">
-            <li><span>01</span><span data-i18n="feat.1">Supports CSV, TSV and Parquet formats</span></li>
+            <li><span>01</span><span data-i18n="feat.1">Supports CSV, TSV, Parquet, JSON / NDJSON, and gzip-compressed files</span></li>
             <li><span>02</span><span data-i18n="feat.2">Import multiple files into DuckDB at once</span></li>
             <li><span>03</span><span data-i18n="feat.3">Import huge files fast in the background</span></li>
             <li><span>04</span><span data-i18n="feat.4">Analyze data with familiar SQL</span></li>
             <li><span>05</span><span data-i18n="feat.5">Browse large result sets comfortably</span></li>
-            <li><span>06</span><span data-i18n="feat.6">Export query results to files (CSV, TSV, and Parquet)</span></li>
+            <li><span>06</span><span data-i18n="feat.6">Export query results to files (CSV, TSV, Parquet, JSON, and Excel)</span></li>
             <li><span>07</span><span data-i18n="feat.7">Write query results to another table</span></li>
             <li><span>08</span><span data-i18n="feat.8">Manage tables from the GUI</span></li>
             <li><span>09</span><span data-i18n="feat.9">Re-run queries from SQL history</span></li>
@@ -133,7 +133,7 @@ Remote connections only happen if you configure them.</p>
       <p class="section-kicker" data-i18n="pricing.kicker">Pricing</p>
       <div class="section-head centered">
         <h2 data-i18n="pricing.title">Core and Pro</h2>
-        <p data-i18n="pricing.sub">Try every feature for 10 days. After the trial, Core stays free. Pro is for heavier work: larger imports, extra connections, and a few exports.</p>
+        <p data-i18n="pricing.sub">Try every feature for 10 days. After the trial, Core stays free. Pro is for heavier work: larger imports, extra connections, profiling and some exports.</p>
       </div>
 
       <div class="compare-table-wrap" aria-labelledby="compareTitle">
@@ -153,62 +153,122 @@ Remote connections only happen if you configure them.</p>
               <td data-i18n="compare.pro1">11+ files allowed</td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row2">Bulk merge import</th>
+              <th scope="row" data-i18n="compare.row2">JSON / NDJSON import</th>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row3">gzip-compressed files (.csv.gz / .json.gz etc.) import</th>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row4">Show and change inferred column types on import</th>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row5">Bulk merge import</th>
               <td><span class="cmp-no" aria-label="No">×</span></td>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row3">SQL execution, fast scrolling</th>
+              <th scope="row" data-i18n="compare.row6">SQL execution, fast scrolling</th>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row4">Export results to CSV / TSV</th>
+              <th scope="row" data-i18n="compare.row7">Cancel a running query</th>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row5">Export results to Parquet</th>
+              <th scope="row" data-i18n="compare.row8">Show the query plan (EXPLAIN)</th>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row9">Simple chart of results</th>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row10">One-click profile of tables and results</th>
               <td><span class="cmp-no" aria-label="No">×</span></td>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row6">Save results as a table</th>
+              <th scope="row" data-i18n="compare.row11">Export results to CSV / TSV</th>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row12">Export results to JSON</th>
               <td><span class="cmp-no" aria-label="No">×</span></td>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row7">Rename, delete, and inspect table schema</th>
+              <th scope="row" data-i18n="compare.row13">Export results to Parquet</th>
+              <td><span class="cmp-no" aria-label="No">×</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row14">Export results to Excel (.xlsx)</th>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row8">Reorder tables</th>
+              <th scope="row" data-i18n="compare.row15">Save results as a table</th>
+              <td><span class="cmp-no" aria-label="No">×</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row16">Rename, delete, and inspect table schema</th>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row9">SQL history (unlimited, including deleted tables)</th>
+              <th scope="row" data-i18n="compare.row17">Change column types of existing tables</th>
+              <td><span class="cmp-no" aria-label="No">×</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row18">Reorder tables</th>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row10">Import history</th>
+              <th scope="row" data-i18n="compare.row19">SQL history (unlimited, including deleted tables)</th>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row11">Connected DuckDB files</th>
-              <td data-i18n="compare.core11">1</td>
-              <td data-i18n="compare.pro11">Multiple</td>
+              <th scope="row" data-i18n="compare.row20">Saved queries</th>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row12">Quack remote DuckDB (DuckLake supported)</th>
-              <td data-i18n="compare.core12">1</td>
-              <td data-i18n="compare.pro12">Multiple</td>
+              <th scope="row" data-i18n="compare.row21">Import history</th>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
             <tr>
-              <th scope="row" data-i18n="compare.row13">Update checks</th>
+              <th scope="row" data-i18n="compare.row22">Connected DuckDB files</th>
+              <td data-i18n="compare.core22">1</td>
+              <td data-i18n="compare.pro22">Multiple</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row23">Quack remote DuckDB (DuckLake supported)</th>
+              <td data-i18n="compare.core23">1</td>
+              <td data-i18n="compare.pro23">Multiple</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row24">Dark mode</th>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+              <td><span class="cmp-yes" aria-label="Yes">○</span></td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="compare.row25">Update checks</th>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
               <td><span class="cmp-yes" aria-label="Yes">○</span></td>
             </tr>
@@ -249,7 +309,7 @@ Remote connections only happen if you configure them.</p>
         </div>
         <div class="faq-list">
           <details open><summary data-i18n="faq.q1">Does my data leave this computer?</summary><p data-i18n="faq.a1">No. Imports, tables and queries stay in a local DuckDB file. TauLeap never receives them.</p></details>
-          <details><summary data-i18n="faq.q2">Which file types can I import?</summary><p data-i18n="faq.a2">CSV, TSV and Parquet (including .pq). You can mix files into one table when the schema matches.</p></details>
+          <details><summary data-i18n="faq.q2">Which file types can I import?</summary><p data-i18n="faq.a2">CSV, TSV, Parquet (including .pq), JSON, and NDJSON. Gzip-compressed files such as .csv.gz and .json.gz are supported too. You can mix files into one table when the schema matches.</p></details>
           <details><summary data-i18n="faq.q3">Is there a cloud account?</summary><p data-i18n="faq.a3">No. There is no sign-in. Optional remote endpoints such as Quack are connections you choose.</p></details>
           <details><summary data-i18n="faq.q4">Where is the database stored?</summary><p data-i18n="faq.a4">~/Library/Application Support/com.tauleap.tausql/main.duckdb</p></details>
           <details><summary data-i18n="faq.q5">Is TauSQL free?</summary><p data-i18n="faq.a5">Core features are free. For the first 10 days you can try every Pro feature too. After the trial, core features stay available. Pro is $2.99 a month, $24.99 a year, or $49.99 once.</p></details>

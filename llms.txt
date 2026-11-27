@@ -1,0 +1,45 @@
+# TauLeap
+
+> Small, local-first tools for your Mac and your browser.
+
+TauLeap is an independent software project building lightweight macOS desktop apps and Chrome extensions that run locally on your machine with no required account and no usage telemetry.
+
+- Website: https://tauleap.com/
+- Contact: support@tauleap.com
+- GitHub: https://github.com/tau-leap
+
+## Featured Mac Apps
+
+- [TauSQL](https://tauleap.com/product/tausql/): Imports local CSV, TSV, and Parquet files into DuckDB so you can query and analyze them with SQL offline; also opens external `.duckdb` files and connects to remote DuckDB 2.0 Quack / DuckLake endpoints. OS: macOS (Apple Silicon). Pricing: 10-day full trial, then Core stays free; Pro is $2.99/mo, $24.99/yr, or $49.99 lifetime (up to 2 devices).
+- [TauBar](https://tauleap.com/product/taubar/): Window-level taskbar for macOS that shows each open window with its title, pinned apps, Start menu, clock and calendar, Chrome profile indicators, ⌥Tab Window Switcher across Spaces, and drag shelf. OS: macOS 26 (Tahoe) or later, Apple Silicon only (not Intel Macs or macOS 15 and earlier). Pricing: 10-day full trial, then core taskbar stays free; Pro is $0.99/mo, $9.99/yr, or $19.99 lifetime (up to 2 Macs).
+- [TauBar (Japanese)](https://tauleap.com/product/taubar/ja/): Japanese product page for TauBar (macOS 26+ / Apple Silicon).
+- [TauBar Alternatives Comparison](https://tauleap.com/product/taubar/alternatives/): Honest comparison of macOS window-level taskbars — TauBar vs uBar, Tungsten Edge, Winstrix, and DockDoor, including requirements, pricing, and who TauBar is not for.
+- [TauBar Alternatives Comparison (Japanese)](https://tauleap.com/product/taubar/ja/alternatives/): Japanese comparison of TauBar vs uBar, Tungsten Edge, Winstrix, and DockDoor.
+
+## Other Mac Apps
+
+- [TauPad](https://tauleap.com/product/taupad/): Fast-launching local text editor with multi-tab editing, UTF-8 / Shift_JIS encoding and LF / CRLF line-ending support, regex find/replace, and GFM Markdown preview. OS: macOS 10.15+ (Apple Silicon). Pricing: Free.
+- [TauDiff](https://tauleap.com/product/taudiff/): Focused two-pane side-by-side text diff tool where both panes remain editable, preserving character encodings (UTF-8, Shift_JIS, EUC-JP) and line endings on save. OS: macOS 10.15+ (Apple Silicon). Pricing: Free.
+
+## Chrome Extensions
+
+- [GitHub Translate (Chrome Web Store)](https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm): Displays short Japanese labels beside github.com menus, tabs, and buttons for Japanese users. OS: Chrome. Pricing: Free.
+- [GitHub Translate Feedback](https://tauleap.com/product/github-translate/feedback/): Issue templates and feedback guide for GitHub Translate.
+- [TauMemo (Chrome Web Store)](https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj): Chrome Side Panel memo extension that auto-saves notes locally on your device with no account or cloud sync. OS: Chrome. Pricing: Free.
+
+## Site & Releases
+
+- [TauLeap Home](https://tauleap.com/): Full product catalog for Mac apps and Chrome extensions.
+- [About TauLeap](https://tauleap.com/about/): Background, local-first philosophy, and contact information (`support@tauleap.com`).
+- [TauSQL Releases](https://github.com/tau-leap/tausql/releases/latest): Latest signed and notarized DMG release for TauSQL (macOS Apple Silicon).
+- [TauBar Releases](https://github.com/tau-leap/taubar/releases/latest): Latest release for TauBar (macOS 26+ / Apple Silicon).
+
+## Optional
+
+- [Pin Guard (Chrome Web Store)](https://chromewebstore.google.com/detail/pin-guard/hjgldkodbpkdgegobbaafhjkhgeinfac): Minimal Chrome extension that prevents pinned tabs from navigating to another site. OS: Chrome. Pricing: Free.
+- [TauSQL Privacy Policy](https://tauleap.com/product/tausql/privacy-policy.html): Privacy policy for TauSQL (EN / JA).
+- [TauSQL Terms of Service](https://tauleap.com/product/tausql/terms-of-service.html): Terms of service for TauSQL (EN / JA).
+- [TauBar Privacy Policy](https://tauleap.com/product/taubar/privacy-policy.html): Privacy policy for TauBar (EN / JA).
+- [TauBar Terms of Service](https://tauleap.com/product/taubar/terms-of-service.html): Terms of service for TauBar (EN / JA).
+- [TauPad Privacy Policy](https://tauleap.com/product/taupad/privacy-policy.html): Privacy policy for TauPad (EN / JA).
+- [TauDiff Privacy Policy](https://tauleap.com/product/taudiff/privacy-policy.html): Privacy policy for TauDiff (EN / JA).

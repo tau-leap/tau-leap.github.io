@@ -11,6 +11,80 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/product-site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TauPad",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "macOS 10.15 or later",
+    "processorRequirements": "Apple Silicon",
+    "inLanguage": ["en", "ja"],
+    "url": "https://tauleap.com/product/taupad/",
+    "downloadUrl": "https://github.com/tau-leap/taupad/releases/latest",
+    "image": "https://tauleap.com/product/taupad/assets/icon.png",
+    "description": "A lightweight, local text editor for macOS with multi-tab editing, UTF-8 and Shift_JIS encoding support, find and replace, and Markdown preview.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TauLeap",
+      "url": "https://tauleap.com"
+    },
+    "offers": {
+      "@type": "Offer",
+      "name": "Free",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does TauPad sync to the cloud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. It reads and writes local files. Session state is stored on your Mac so tabs can be restored."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which encodings are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "UTF-8 and Shift_JIS, detected from BOM and bytes, or chosen from the status bar / menu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a Windows version?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not yet. A Windows build is planned. The current release is MacOS only."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where are settings stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "~/Library/Application Support/com.tauleap.taupad/settings.json — editable as JSON, reload without restarting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is TauPad free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Download it from GitHub Releases."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="theme-pad">
   <a class="skip-link" href="#mainContent" data-i18n="a11y.skip">Skip to content</a>
@@ -119,10 +193,10 @@ Documents stay where you saved them.</p>
           <p data-i18n="faq.sub">A short briefing before you download.</p>
         </div>
         <div class="faq-list">
-          <details open><summary data-i18n="faq.q1">Does TauPad sync to the cloud?</summary><p data-i18n="faq.a1">No. It reads and writes local files.</p></details>
-          <details><summary data-i18n="faq.q2">Which encodings are supported?</summary><p data-i18n="faq.a2">UTF-8 and Shift_JIS.</p></details>
-          <details><summary data-i18n="faq.q3">Is there a Windows version?</summary><p data-i18n="faq.a3">Not yet. A Windows build is planned.</p></details>
-          <details><summary data-i18n="faq.q4">Where are settings stored?</summary><p data-i18n="faq.a4">~/Library/Application Support/com.tauleap.taupad/settings.json</p></details>
+          <details open><summary data-i18n="faq.q1">Does TauPad sync to the cloud?</summary><p data-i18n="faq.a1">No. It reads and writes local files. Session state is stored on your Mac so tabs can be restored.</p></details>
+          <details><summary data-i18n="faq.q2">Which encodings are supported?</summary><p data-i18n="faq.a2">UTF-8 and Shift_JIS, detected from BOM and bytes, or chosen from the status bar / menu.</p></details>
+          <details><summary data-i18n="faq.q3">Is there a Windows version?</summary><p data-i18n="faq.a3">Not yet. A Windows build is planned. The current release is MacOS only.</p></details>
+          <details><summary data-i18n="faq.q4">Where are settings stored?</summary><p data-i18n="faq.a4">~/Library/Application Support/com.tauleap.taupad/settings.json — editable as JSON, reload without restarting.</p></details>
           <details><summary data-i18n="faq.q5">Is TauPad free?</summary><p data-i18n="faq.a5">Yes. Download it from GitHub Releases.</p></details>
         </div>
       </div>

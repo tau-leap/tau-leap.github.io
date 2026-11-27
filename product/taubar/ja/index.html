@@ -37,11 +37,18 @@
     "@type": "SoftwareApplication",
     "name": "TauBar",
     "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "MacOS",
+    "operatingSystem": "macOS 26 以降",
+    "processorRequirements": "Apple Silicon",
     "inLanguage": "ja",
     "url": "https://tauleap.com/product/taubar/ja/",
+    "downloadUrl": "https://github.com/tau-leap/taubar/releases/latest",
     "image": "https://tauleap.com/product/taubar/assets/og.png",
-    "description": "WindowsからMacへ乗り換えた人向けのMacOSタスクバー。ウィンドウ単位の切替、ピン留め、スタートメニュー。",
+    "description": "macOS 26（Tahoe）以降・Apple Silicon 向けのウィンドウ単位タスクバー。タイトルでウィンドウを切り替え、アプリをピン留めし、スタートメニューも手元に置けます。",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TauLeap",
+      "url": "https://tauleap.com"
+    },
     "offers": [
       {
         "@type": "Offer",
@@ -51,21 +58,86 @@
       },
       {
         "@type": "Offer",
-        "name": "Monthly",
+        "name": "Pro Monthly",
         "price": "0.99",
         "priceCurrency": "USD"
       },
       {
         "@type": "Offer",
-        "name": "Yearly",
+        "name": "Pro Yearly",
         "price": "9.99",
         "priceCurrency": "USD"
       },
       {
         "@type": "Offer",
-        "name": "Lifetime",
+        "name": "Pro Lifetime",
         "price": "19.99",
         "priceCurrency": "USD"
+      }
+    ]
+  }
+  </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "ja",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "TauBarはDockの代わりになりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dockとの併用を推奨しています。Dockを右や左に隠してタスクバー中心にできます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "アクセシビリティ権限はなぜ必要ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ウィンドウタイトルの取得、前面への切り替え、最小化したウィンドウの復元にMacOSの許可が必要です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "画面収録権限は必須ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Window Switcherでプレビュー画像を表示する場合のみ必要です。許可しなくてもアイコンとタイトルで利用できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "トライアル終了後はどうなりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "10日後は Free プランになり、基本のタスクバーは継続利用できます。Pro 機能は月額・年額・買い切りで有効化してください。設定内容は Mac にそのまま保存されます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Free と Pro の違いは？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Free は切替・ピン留め・スタートメニュー・時計など基本機能。Pro は Window Switcher、シェルフ、予定、メディア操作、バッジなどを追加します（詳細は価格セクション）。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "何台のMacで使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1つのライセンスを、個人利用のMac最大2台で有効化できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "複数ディスプレイでも使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。タスクバーを表示する画面を選べ、Window Switcherはポインタのある画面に開きます。"
+        }
       }
     ]
   }

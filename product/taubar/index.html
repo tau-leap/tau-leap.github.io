@@ -36,16 +36,87 @@
     "@type": "SoftwareApplication",
     "name": "TauBar",
     "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "MacOS",
+    "operatingSystem": "macOS 26 or later",
+    "processorRequirements": "Apple Silicon",
     "inLanguage": "en",
     "url": "https://tauleap.com/product/taubar/",
+    "downloadUrl": "https://github.com/tau-leap/taubar/releases/latest",
     "image": "https://tauleap.com/product/taubar/assets/og.png",
-    "description": "A Windows-style taskbar for Mac. Switch by window title, pin apps, and keep a Start menu on the taskbar.",
+    "description": "A window-level taskbar for macOS 26 on Apple Silicon. Switch by window title, pin apps, and keep a Start menu on the taskbar.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TauLeap",
+      "url": "https://tauleap.com"
+    },
     "offers": [
       {"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD"},
-      {"@type": "Offer", "name": "Monthly", "price": "0.99", "priceCurrency": "USD"},
-      {"@type": "Offer", "name": "Yearly", "price": "9.99", "priceCurrency": "USD"},
-      {"@type": "Offer", "name": "Lifetime", "price": "19.99", "priceCurrency": "USD"}
+      {"@type": "Offer", "name": "Pro Monthly", "price": "0.99", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "Pro Yearly", "price": "9.99", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "Pro Lifetime", "price": "19.99", "priceCurrency": "USD"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does TauBar replace the Dock?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We recommend using it alongside the Dock. Or hide the Dock on the left or right and make the taskbar your home base."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are Accessibility permissions needed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MacOS requires this permission for TauBar to read window titles, focus windows, and restore minimized windows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Screen Recording required?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Only for preview thumbnails in Window Switcher. Without it, TauBar shows app icons and titles instead."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens after the trial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After 10 days you stay on Free with the core taskbar. Pro features need Monthly, Yearly, or Lifetime. Your preferences remain saved on your Mac."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is included in Free vs Pro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Free covers switching, pinning, Start menu, and clock. Pro adds Window Switcher, drag shelf, calendar events, media controls, badges, and more — see Pricing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many Macs can I use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each license can be activated on up to two Macs for your personal use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does TauBar work with multiple displays?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Choose the display for your taskbar, and Window Switcher opens on the display under your pointer."
+        }
+      }
     ]
   }
   </script>
@@ -284,7 +355,7 @@ Without it, TauBar shows app icons and titles instead.</p></details>
           <details><summary data-i18n="faq.q4">What happens after the trial?</summary><p data-i18n="faq.a4">After 10 days you stay on Free with the core taskbar. Pro features need Monthly, Yearly, or Lifetime. Your preferences remain saved on your Mac.</p></details>
           <details><summary data-i18n="faq.q7">What is included in Free vs Pro?</summary><p data-i18n="faq.a7">Free covers switching, pinning, Start menu, and clock. Pro adds Window Switcher, drag shelf, calendar events, media controls, badges, and more — see Pricing.</p></details>
           <details><summary data-i18n="faq.q5">How many Macs can I use?</summary><p data-i18n="faq.a5">Each license can be activated on up to two Macs for your personal use.</p></details>
-          <details><summary data-i18n="faq.q6">Does TauBar work with multiple displays?</summary><p data-i18n="faq.a6">Yes. The taskbar follows your display setup, and Window Switcher opens on the display under your pointer.</p></details>
+          <details><summary data-i18n="faq.q6">Does TauBar work with multiple displays?</summary><p data-i18n="faq.a6">Yes. Choose the display for your taskbar, and Window Switcher opens on the display under your pointer.</p></details>
         </div>
       </div>
     </section>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>TauLeap · Mac apps and Chrome extensions</title>
-<meta content="TauLeap makes small Mac apps and Chrome extensions that run on your machine. TauBar, TauSQL, TauPad, TauDiff, GitHub Translate, Pin Guard, TauMemo." name="description"/>
+<title>TauLeap · Small, local-first tools for your Mac and your browser</title>
+<meta content="Small, local-first tools for your Mac and your browser. TauSQL, TauBar, TauPad, TauDiff, GitHub Translate, TauMemo, and Pin Guard." name="description"/>
 <link rel="canonical" href="https://tauleap.com/">
 <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="assets/favicon.png" type="image/png" sizes="192x192">
@@ -14,6 +14,184 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link href="assets/css/home.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://tauleap.com/#organization",
+      "name": "TauLeap",
+      "url": "https://tauleap.com",
+      "email": "support@tauleap.com",
+      "description": "Small, local-first tools for your Mac and your browser.",
+      "sameAs": [
+        "https://github.com/tau-leap"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tauleap.com/#website",
+      "name": "TauLeap",
+      "url": "https://tauleap.com/",
+      "description": "Small, local-first tools for your Mac and your browser.",
+      "publisher": {
+        "@id": "https://tauleap.com/#organization"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://tauleap.com/#products",
+      "name": "TauLeap Products",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "TauSQL",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "macOS",
+            "processorRequirements": "Apple Silicon",
+            "url": "https://tauleap.com/product/tausql/",
+            "downloadUrl": "https://github.com/tau-leap/tausql/releases/latest",
+            "image": "https://tauleap.com/product/tausql/assets/hero.png",
+            "description": "Import local CSV, TSV, and Parquet files into DuckDB and query them with SQL on Mac. Works offline with no account or server required.",
+            "publisher": {
+              "@id": "https://tauleap.com/#organization"
+            },
+            "offers": [
+              {"@type": "Offer", "name": "Core (Free)", "price": "0", "priceCurrency": "USD"},
+              {"@type": "Offer", "name": "Pro Monthly", "price": "2.99", "priceCurrency": "USD"},
+              {"@type": "Offer", "name": "Pro Yearly", "price": "24.99", "priceCurrency": "USD"},
+              {"@type": "Offer", "name": "Pro Lifetime", "price": "49.99", "priceCurrency": "USD"}
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "TauBar",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "macOS 26 or later",
+            "processorRequirements": "Apple Silicon",
+            "url": "https://tauleap.com/product/taubar/",
+            "downloadUrl": "https://github.com/tau-leap/taubar/releases/latest",
+            "image": "https://tauleap.com/product/taubar/assets/og.png",
+            "description": "A window-level taskbar for macOS 26 on Apple Silicon. Switch by window title, pin apps, and keep a Start menu on the taskbar.",
+            "publisher": {
+              "@id": "https://tauleap.com/#organization"
+            },
+            "offers": [
+              {"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD"},
+              {"@type": "Offer", "name": "Pro Monthly", "price": "0.99", "priceCurrency": "USD"},
+              {"@type": "Offer", "name": "Pro Yearly", "price": "9.99", "priceCurrency": "USD"},
+              {"@type": "Offer", "name": "Pro Lifetime", "price": "19.99", "priceCurrency": "USD"}
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "TauPad",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "macOS 10.15 or later",
+            "processorRequirements": "Apple Silicon",
+            "url": "https://tauleap.com/product/taupad/",
+            "downloadUrl": "https://github.com/tau-leap/taupad/releases/latest",
+            "image": "https://tauleap.com/product/taupad/assets/icon.png",
+            "description": "A lightweight, local text editor for macOS with multi-tab editing, UTF-8 and Shift_JIS encoding support, find and replace, and Markdown preview.",
+            "publisher": {
+              "@id": "https://tauleap.com/#organization"
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Free",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "TauDiff",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "macOS 10.15 or later",
+            "processorRequirements": "Apple Silicon",
+            "url": "https://tauleap.com/product/taudiff/",
+            "downloadUrl": "https://github.com/tau-leap/taudiff/releases/latest",
+            "image": "https://tauleap.com/product/taudiff/assets/icon.png",
+            "description": "A focused two-pane side-by-side text diff tool for macOS where both panes remain editable and character encodings are preserved on save.",
+            "publisher": {
+              "@id": "https://tauleap.com/#organization"
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Free",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "GitHub Translate",
+            "applicationCategory": "BrowserApplication",
+            "operatingSystem": "Chrome",
+            "inLanguage": "ja",
+            "url": "https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm",
+            "installUrl": "https://chromewebstore.google.com/detail/github-translate/ignplaeoffkjaffgbhclflhmegllfipm",
+            "image": "https://tauleap.com/assets/product-icons/github-translate.png",
+            "description": "Chrome extension that puts short Japanese labels beside github.com menus, tabs, and buttons.",
+            "publisher": {
+              "@id": "https://tauleap.com/#organization"
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Free",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "TauMemo",
+            "applicationCategory": "BrowserApplication",
+            "operatingSystem": "Chrome",
+            "url": "https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj",
+            "installUrl": "https://chromewebstore.google.com/detail/taumemo/khojmfmcimbohoejfgnegfgdilehlhbj",
+            "image": "https://tauleap.com/assets/product-icons/taumemo.png",
+            "description": "Chrome Side Panel memo extension that auto-saves notes locally on your device.",
+            "publisher": {
+              "@id": "https://tauleap.com/#organization"
+            },
+            "offers": {
+              "@type": "Offer",
+              "name": "Free",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body class="home">
 <header class="site-header">
@@ -47,8 +225,8 @@
         </div>
         <h1 class="hero-name">Tau<span class="accent-tau">Leap</span></h1>
         <div class="hero-lead-group">
-          <p class="hero-tag">Mac apps and Chrome extensions</p>
-          <p class="hero-tag-ja">軽量で安全なツールをつくっています</p>
+          <p class="hero-tag">Small, local-first tools for your Mac and your browser.</p>
+          <p class="hero-tag-ja">Mac とブラウザのための、小さくローカルファーストな道具。</p>
         </div>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#apps">
@@ -67,7 +245,7 @@
           </div>
           <div class="hero-spec">
             <span class="hero-spec-label">02 / Lightweight</span>
-            <span class="hero-spec-value">Small, fast tools crafted for daily developer friction</span>
+            <span class="hero-spec-value">Small, fast tools crafted for everyday work on Mac and Chrome</span>
           </div>
           <div class="hero-spec">
             <span class="hero-spec-label">03 / Lineup</span>

@@ -11,6 +11,88 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/product-site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TauSQL",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "macOS",
+    "processorRequirements": "Apple Silicon",
+    "inLanguage": ["en", "ja"],
+    "url": "https://tauleap.com/product/tausql/",
+    "downloadUrl": "https://github.com/tau-leap/tausql/releases/latest",
+    "image": "https://tauleap.com/product/tausql/assets/hero.png",
+    "description": "Import local CSV, TSV, and Parquet files into DuckDB and query them with SQL on Mac. Works offline with no account or server required.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TauLeap",
+      "url": "https://tauleap.com"
+    },
+    "offers": [
+      {"@type": "Offer", "name": "Core (Free)", "price": "0", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "Pro Monthly", "price": "2.99", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "Pro Yearly", "price": "24.99", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "Pro Lifetime", "price": "49.99", "priceCurrency": "USD"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does my data leave this computer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Imports, tables and queries stay in a local DuckDB file. TauLeap never receives them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which file types can I import?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CSV, TSV and Parquet (including .pq). You can mix files into one table when the schema matches."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a cloud account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. There is no sign-in. Optional remote endpoints such as Quack are connections you choose."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is the database stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "~/Library/Application Support/com.tauleap.tausql/main.duckdb"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is TauSQL free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Core features are free. For the first 10 days you can try every Pro feature too. After the trial, Core stays available. Pro is $2.99 a month, $24.99 a year, or $49.99 once."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to my data after the trial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nothing is deleted. Tables, history, and connections you already added stay on your machine. You can still open and query them. Only new Pro actions are limited."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="theme-sql">
   <a class="skip-link" href="#mainContent" data-i18n="a11y.skip">Skip to content</a>
@@ -252,7 +334,7 @@ Remote connections only happen if you configure them.</p>
           <details><summary data-i18n="faq.q2">Which file types can I import?</summary><p data-i18n="faq.a2">CSV, TSV and Parquet (including .pq). You can mix files into one table when the schema matches.</p></details>
           <details><summary data-i18n="faq.q3">Is there a cloud account?</summary><p data-i18n="faq.a3">No. There is no sign-in. Optional remote endpoints such as Quack are connections you choose.</p></details>
           <details><summary data-i18n="faq.q4">Where is the database stored?</summary><p data-i18n="faq.a4">~/Library/Application Support/com.tauleap.tausql/main.duckdb</p></details>
-          <details><summary data-i18n="faq.q5">Is TauSQL free?</summary><p data-i18n="faq.a5">Core features are free. For the first 10 days you can try every Pro feature too. After the trial, core features stay available. Pro is $2.99 a month, $24.99 a year, or $49.99 once.</p></details>
+          <details><summary data-i18n="faq.q5">Is TauSQL free?</summary><p data-i18n="faq.a5">Core features are free. For the first 10 days you can try every Pro feature too. After the trial, Core stays available. Pro is $2.99 a month, $24.99 a year, or $49.99 once.</p></details>
           <details><summary data-i18n="faq.q6">What happens to my data after the trial?</summary><p data-i18n="faq.a6">Nothing is deleted. Tables, history, and connections you already added stay on your machine. You can still open and query them. Only new Pro actions are limited.</p></details>
         </div>
       </div>

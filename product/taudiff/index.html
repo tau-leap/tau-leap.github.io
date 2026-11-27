@@ -11,6 +11,80 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/product-site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TauDiff",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "macOS 10.15 or later",
+    "processorRequirements": "Apple Silicon",
+    "inLanguage": ["en", "ja"],
+    "url": "https://tauleap.com/product/taudiff/",
+    "downloadUrl": "https://github.com/tau-leap/taudiff/releases/latest",
+    "image": "https://tauleap.com/product/taudiff/assets/icon.png",
+    "description": "A focused two-pane side-by-side text diff tool for macOS where both panes remain editable and character encodings are preserved on save.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "TauLeap",
+      "url": "https://tauleap.com"
+    },
+    "offers": {
+      "@type": "Offer",
+      "name": "Free",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I edit the files, or only view the diff?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both panes are editable. Save writes the active side, keeping its encoding and line endings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it send my files anywhere?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Comparison and editing are local. The app only contacts GitHub Releases to check for updates; your files are never included."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a Windows version?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not yet. A Windows build is planned. The current release is MacOS only."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How large a file can I open?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Files over 10 MB show a confirmation first. Keep backups — overwrite is irreversible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is TauDiff free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Download it from GitHub Releases."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="theme-diff">
   <a class="skip-link" href="#mainContent" data-i18n="a11y.skip">Skip to content</a>
@@ -123,10 +197,10 @@ The only network use is update checks against GitHub Releases.</p>
           <p data-i18n="faq.sub">Short answers before you try it.</p>
         </div>
         <div class="faq-list">
-          <details open><summary data-i18n="faq.q1">Can I edit the files, or only view the diff?</summary><p data-i18n="faq.a1">Both panes are editable.</p></details>
+          <details open><summary data-i18n="faq.q1">Can I edit the files, or only view the diff?</summary><p data-i18n="faq.a1">Both panes are editable. Save writes the active side, keeping its encoding and line endings.</p></details>
           <details><summary data-i18n="faq.q2">Does it send my files anywhere?</summary><p data-i18n="faq.a2">No. Comparison and editing are local. The app only contacts GitHub Releases to check for updates; your files are never included.</p></details>
-          <details><summary data-i18n="faq.q3">Is there a Windows version?</summary><p data-i18n="faq.a3">Not yet. A Windows build is planned.</p></details>
-          <details><summary data-i18n="faq.q4">How large a file can I open?</summary><p data-i18n="faq.a4">Files over 10 MB show a confirmation first.</p></details>
+          <details><summary data-i18n="faq.q3">Is there a Windows version?</summary><p data-i18n="faq.a3">Not yet. A Windows build is planned. The current release is MacOS only.</p></details>
+          <details><summary data-i18n="faq.q4">How large a file can I open?</summary><p data-i18n="faq.a4">Files over 10 MB show a confirmation first. Keep backups — overwrite is irreversible.</p></details>
           <details><summary data-i18n="faq.q5">Is TauDiff free?</summary><p data-i18n="faq.a5">Yes. Download it from GitHub Releases.</p></details>
         </div>
       </div>
